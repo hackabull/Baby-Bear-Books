@@ -1,5 +1,3 @@
-![Screen Shot 2018-07-12 at 8.34.14 PM.png](resources/7FEA3B5A1957BEFDB59E92BA012441BE.png =1024x768)
-
 book image that takes up the entire page so it looks like a book
 
 how to change pages https://www.npmjs.com/package/react-flip-page
