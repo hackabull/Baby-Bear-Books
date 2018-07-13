@@ -2,6 +2,8 @@ book image that takes up the entire page so it looks like a book
 
 how to change pages https://www.npmjs.com/package/react-flip-page
 
+potential font https://fonts.google.com/specimen/Cabin+Sketch
+
 ## Zoo Themed: go to each animal 
 story of going to zoo
 a) eat
