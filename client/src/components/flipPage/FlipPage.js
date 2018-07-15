@@ -69,10 +69,12 @@ turnRight()
          <div className="right">
              <figure className="back">
              <p>isn't that cool?</p>
+             <img className="gif1" src="https://i.giphy.com/media/f4V2mqvv0wT9m/giphy.webp" />
              </figure>
              
              <figure className="front">
                 <h2>Book Heading</h2>
+             
             </figure>
          </div>
          <div className="right">
