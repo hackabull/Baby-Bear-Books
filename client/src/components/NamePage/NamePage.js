@@ -8,7 +8,9 @@ class NamePage extends Component {
         <div clasName="container">
             <h1>My name is</h1>
             <div className="input-field col s6">
-                {/* <input value="" id="first_name2" type="text" className="validate" style="text-align: center"> */}
+                <form>
+                <input value="" id="first_name2" type="text" className="validate" style="text-align: center" />
+                </form>
             </div>
             <h1>and today I'm going to the Zoo!</h1>
 
