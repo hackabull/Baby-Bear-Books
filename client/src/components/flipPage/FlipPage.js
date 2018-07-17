@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import './FlipPage.css';
-
+import NamePage from '../NamePage/NamePage.js'
 
 
 var right = document.getElementsByClassName("right");
@@ -68,8 +68,11 @@ turnRight()
          </div>
          <div className="right">
              <figure className="back">
-             <p>isn't that cool?</p>
-             <img className="gif1" src="https://i.giphy.com/media/f4V2mqvv0wT9m/giphy.webp" />
+            <br />
+             <NamePage />
+             <img className="gif1" src="https://img00.deviantart.net/31bf/i/2011/177/f/e/game_background_concept_by_legacyofpiracy-d3k3a4k.jpg" />
+             <h2>My name is</h2>
+             <h3>and today I'm going to the Zoo!</h3>
              </figure>
              
              <figure className="front">
@@ -80,8 +83,7 @@ turnRight()
          <div className="right">
              <figure className="back"></figure>
              <figure className="front" id="cover">
-                 <h1>Book Title</h1>
-                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, modi.</p>
+                 
              </figure>
          </div>
      </div>

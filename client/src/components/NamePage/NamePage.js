@@ -1,18 +1,15 @@
-import React from "react";
+import React, { Component } from "react";
 import "./NamePage.css";
 import "./NamePage.scss";
 
 class NamePage extends Component {
     render() {
-        return
-        <div clasName="container">
-            <h1>My name is</h1>
+        return <div clasName="container">
+           
             <div className="input-field col s6">
-                <form>
-                <input value="" id="first_name2" type="text" className="validate" style="text-align: center" />
-                </form>
+                {/* <input value="" id="first_name2" type="text" className="validate" style="text-align: center"> */}
             </div>
-            <h1>and today I'm going to the Zoo!</h1>
+          
 
             <div class="bird-container bird-container--one">
                 <div class="bird bird--one"></div>

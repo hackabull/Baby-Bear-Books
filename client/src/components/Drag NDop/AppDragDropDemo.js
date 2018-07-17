@@ -20,7 +20,7 @@ onDragOver = (ev) => {
 } 
 
 onDrop = (ev, cat) => {
-  let id = ev.dataTransfer.getData("id");
+  let id = ev.dataTransfer.getData("id:");
 
   let tasks = this.state.tasks.filter((task) => {
     if (task.name = id) {
