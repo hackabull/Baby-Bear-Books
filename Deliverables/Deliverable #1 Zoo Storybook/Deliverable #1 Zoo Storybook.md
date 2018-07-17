@@ -37,3 +37,4 @@ Drag and Drop built in React
 - sounds added ex monkey eating banana makes an eating sound
 - add more animals
 - Drag and drop on mobile friendly
+- Toggle for log-in/sign-up where gathering more than just first name
