@@ -17,8 +17,10 @@ class App extends Component {
         <Route exact path="/outro" component={Outro} />
       </Router>
 
-      <FlipPage />
-      <AppDragDropDemo />
+
+ <AppDragDropDemo />
+   
+     
 
 
       </div>

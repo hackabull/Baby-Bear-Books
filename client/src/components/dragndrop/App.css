@@ -38,8 +38,10 @@ padding: 0;
 
 .droppable {
   position: absolute;
+  top: 20px;
   width: 150px;
   height: 100vh;
+
   right: 0;
   top: 10;
   padding: 10px;
