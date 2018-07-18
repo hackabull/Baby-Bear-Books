@@ -12,7 +12,7 @@ state = {
 
 onDragStart = (ev, id) => {
   console.log('dragstart:', id);
-  ev.dataTransfer.setData("id:", id);
+  ev.dataTransfer.setData("id", id);
 }
 
 onDragOver = (ev) => {
@@ -20,10 +20,10 @@ onDragOver = (ev) => {
 } 
 
 onDrop = (ev, cat) => {
-  let id = ev.dataTransfer.getData("id:");
+  let id = ev.dataTransfer.getData("id");
 
   let tasks = this.state.tasks.filter((task) => {
-    if (task.name = id) {
+    if (task.name == id) {
       task.category = cat;
     }
     return task;
