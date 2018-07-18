@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import Outro from "./components/pages/Outro";
 import './index.css';
 import FlipPage from './components/flipPage/FlipPage.js';
-import AppDragDropDemo from './components/Drag NDop/AppDragDropDemo.js'
+import AppDragDropDemo from './components/dragndrop/AppDragDropDemo'
 
 
 
