@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import FlipPage from '../flipPage/FlipPage.js'
+
 
 export default class AppDragDropDemo extends Component {
     state = {
@@ -64,19 +64,12 @@ export default class AppDragDropDemo extends Component {
                     <span className="task-header">WIP</span>
                     {tasks.wip}
                 </div>
-
-                <FlipPage />
-                 
                 <div className="droppable" 
-                 
                     onDragOver={(e)=>this.onDragOver(e)}
                     onDrop={(e)=>this.onDrop(e, "complete")}>
-                     <span className="task-header">COMPLETED</span>
-                     {tasks.complete}
-
+                    <span className="task-header">COMPLETED</span>
+                    {tasks.complete}
                 </div>
-
-
             </div>
         );
     }

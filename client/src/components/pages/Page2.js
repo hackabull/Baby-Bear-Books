@@ -1,11 +1,11 @@
 import React from 'react';
 
 
-const Page1 = () => {
+const Page2 = () => {
     <div className="container-fluid">
-      <p>This is Page 1</p>
+      <p>This is Page 2</p>
     </div>
     
 };
 
-export default Page1;
+export default Page2;
