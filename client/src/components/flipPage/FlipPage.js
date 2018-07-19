@@ -64,11 +64,17 @@ turnRight()
          </div>
          <div className="right">
              <figure className="back"></figure>
-             <figure className="front"></figure>
+             <figure className="front">
+             
+             </figure>
          </div>
+
+
+
+
          <div className="right">
              <figure className="back">
-            <br />
+             <br />
              <NamePage />
              <img className="gif1" src="https://img00.deviantart.net/31bf/i/2011/177/f/e/game_background_concept_by_legacyofpiracy-d3k3a4k.jpg" />
              <h2>My name is</h2>
@@ -76,25 +82,25 @@ turnRight()
              </figure>
              
              <figure className="front">
-                <h2>Book Heading</h2>
+             <h2>Book Heading</h2>
              
             </figure>
          </div>
          <div className="right">
              <figure className="back"></figure>
              <figure className="front" id="cover">
-                 
-             </figure>
+             <h2>HackABull kills the project</h2>    
+         </figure>
+
          </div>
+         
      </div>
-     <button onClick={this.turnLeft}>Prev</button> <button onClick={this.turnRight}>Next</button>
-     <br/>
-
- 
- </div> 
 
 
-
+<div className="btncontainer">
+<button className="turnbtn" onClick={this.turnLeft}>Prev</button> <button className="turnbtn" onClick={this.turnRight}>Next</button>
+</div>
+</div> 
   }
 }
 

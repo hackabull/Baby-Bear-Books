@@ -18,7 +18,7 @@ h1 {
   align-items: center;
   justify-content: center;
   min-height: 42rem;
-  background-image: linear-gradient(to bottom, rgba(255, 168, 76, 0.6) 0%, rgba(255, 123, 13, 0.6) 100%), url("images/cartoon-2640555_1280.jpg");
+ /* background-image: linear-gradient(to bottom, rgba(255, 168, 76, 0.6) 0%, rgba(255, 123, 13, 0.6) 100%), url("images/cartoon-2640555_1280.jpg"); */
   background-blend-mode: soft-light;
   background-size: cover;
   background-position: center center;
