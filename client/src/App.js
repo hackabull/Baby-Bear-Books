@@ -13,9 +13,6 @@ import Outro from "./components/pages/Outro";
 
 
 
-
->>>>>>> logInPage
-
 class App extends Component {
   render() {
     return (
