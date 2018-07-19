@@ -16,7 +16,7 @@ body{
 }
 .book-section > .container{
 	height: 400px;
-	width: 1250px;
+	width: 1150px;
 	transform: translateX(-50%);
 	border-radius: 2%;
 	margin-bottom: 30px;
