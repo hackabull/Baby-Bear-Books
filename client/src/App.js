@@ -13,6 +13,7 @@ class App extends Component {
     return (
       <div className="container-fluid">
 
+{/* This is where routes where will go */}
       <Router>
         <Route exact path="/outro" component={Outro} />
       </Router>
