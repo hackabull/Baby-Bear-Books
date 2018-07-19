@@ -1,7 +1,7 @@
 {
-  "name": "mern",
+  "name": "babybearbooks",
   "version": "1.0.0",
-  "description": "Mern Demo",
+  "description": "A new kind of bedtime story",
   "main": "server.js",
   "scripts": {
     "server": "node server.js",
