@@ -10,13 +10,13 @@ body{
 	width: 100%;
 	padding: 40px 0;
 	text-align: center;
+	position: absolute;
+	left: 50%;
+	top: 10%;
 }
 .book-section > .container{
 	height: 400px;
-	width: 1200px;
-	position: relative;
-	left: 50%;
-	bottom: 100%;
+	width: 1250px;
 	transform: translateX(-50%);
 	border-radius: 2%;
 	margin-bottom: 30px;
@@ -41,11 +41,11 @@ body{
 	position: absolute;
 	left:0;
 	top:0;
-	background-size: 200%;
+
 	background-repeat: no-repeat;
 	backface-visibility: hidden;
 	background-color: white;
-	overflow: block;
+	overflow: hidden;
 }
 .right > figure.front{
 	background-position: right;
@@ -72,7 +72,7 @@ body{
 	border-radius: 0 10px 10px 0;
 	background-color: rgba(0,0,0,0.1);
 }
-.book-section > button{
+.turnbtn{
 	border: 2px solid #ef9f00;
 
 	background-color: transparent;
@@ -82,6 +82,8 @@ body{
 	cursor: pointer;
 	margin: 10px;
 	transition: 0.3s ease-in-out;
+	position: relative; 
+	right: 5%;
 }
 .book-section > button:focus, .book-section > button:active{
 	outline: none;
@@ -102,7 +104,7 @@ body{
 .front#cover, .back#back-cover{
 	background-color: #ffcb63;
 	font-family: calibri;
-	text-align: left;
+	text-align: center;
 	padding: 0 30px;
 }
 .front#cover h1{
@@ -118,5 +120,12 @@ body{
 height: 400px;
 width: 550px;
 
+
+}
+
+.btncontainer {
+ position: relative;
+	right: 45%;
+ text-align: center;
 
 }

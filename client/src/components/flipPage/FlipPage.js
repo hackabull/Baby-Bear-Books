@@ -89,18 +89,18 @@ turnRight()
          <div className="right">
              <figure className="back"></figure>
              <figure className="front" id="cover">
-                 
+             <h2>HackABull kills the project</h2>    
          </figure>
+
          </div>
+         
      </div>
-     <button onClick={this.turnLeft}>Prev</button> <button onClick={this.turnRight}>Next</button>
-     <br/>
-
- 
- </div> 
 
 
-
+<div className="btncontainer">
+<button className="turnbtn" onClick={this.turnLeft}>Prev</button> <button className="turnbtn" onClick={this.turnRight}>Next</button>
+</div>
+</div> 
   }
 }
 
