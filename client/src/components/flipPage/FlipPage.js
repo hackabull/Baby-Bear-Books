@@ -7,8 +7,6 @@ var right = document.getElementsByClassName("right");
     var si = right.length;
     var z=1;
 
-
-
 class FlipPage extends Component {
 turnRight()
   {
@@ -68,10 +66,6 @@ turnRight()
              
              </figure>
          </div>
-
-
-
-
          <div className="right">
              <figure className="back">
              <br />
