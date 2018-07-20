@@ -89,7 +89,7 @@ turnRight()
          <div className="right">
              <figure className="back"></figure>
              <figure className="front" id="cover">
-             <h2>HackABull kills the project</h2>    
+             <img src="../img/coverpage.png" width="100%" height="100%" /> 
          </figure>
 
          </div>
