@@ -5,9 +5,9 @@ import './App.css';
 export default class AppDragDropDemo extends Component {
     state = {
         tasks: [
-            {name:"Learn Angular",category:"readyItem", bgcolor: "yellow"},
-            {name:"React", category:"readyItem", bgcolor:"blue"},
-            {name:"Vue", category:"readyItem", bgcolor:"green"}
+            {name:"animal",category:"readyItem", bgcolor: "yellow"},
+            {name:"letters", category:"readyItem", bgcolor:"blue"},
+            {name:"numbers", category:"readyItem", bgcolor:"green"}
           ]
     }
 
@@ -50,6 +50,7 @@ export default class AppDragDropDemo extends Component {
                     className="draggable"
                     style = {{backgroundColor: t.bgcolor}}
                 >
+
                 </div>
             );
         });

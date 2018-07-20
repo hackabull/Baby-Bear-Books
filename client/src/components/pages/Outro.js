@@ -2,7 +2,7 @@ import React from "react";
 
 const Outro = () => (
     <div className="container">
-        <h1>Good job, you finished the book.</h1>    
+        <p>Good job.</p>    
     </div>
 );
 

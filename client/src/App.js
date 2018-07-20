@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import './index';
 import FlipPage from './components/flipPage/FlipPage.js';
 import AppDragDropDemo from './components/dragndrop/AppDragDropDemo';
-import NamePage from './components/NamePage/NamePage';
+
 import Intro from "./components/pages/Intro";
 // import Page1 from "./components/pages/Page1";
 // import Page2 from "./components/pages/Page2";
@@ -23,7 +23,7 @@ class App extends Component {
         <Switch>
           <div className="routes">
           {/* 6 total routes with path and component */}
-            <Route exact path="/" component={NamePage} />
+         
             <Route exact path="/intro" component={Intro} />
             {/* <Route exact path="/page1" component={Page1} />
             <Route exact path="/page2" component={Page2} />
