@@ -16,7 +16,7 @@ body{
 }
 .book-section > .container{
 	height: 400px;
-	width: 1150px;
+	width: 1250px;
 	transform: translateX(-50%);
 	border-radius: 2%;
 	margin-bottom: 30px;
@@ -105,7 +105,7 @@ body{
 	background-color: #ffcb63;
 	font-family: calibri;
 	text-align: center;
-	padding: 0 30px;
+	/* padding: 0 30px; */
 }
 .front#cover h1{
 	color: #fff;

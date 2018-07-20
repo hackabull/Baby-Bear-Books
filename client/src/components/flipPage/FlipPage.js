@@ -7,6 +7,8 @@ var right = document.getElementsByClassName("right");
     var si = right.length;
     var z=1;
 
+
+
 class FlipPage extends Component {
 turnRight()
   {
@@ -66,6 +68,10 @@ turnRight()
              
              </figure>
          </div>
+
+
+
+
          <div className="right">
              <figure className="back">
              <br />
@@ -83,19 +89,15 @@ turnRight()
          <div className="right">
              <figure className="back"></figure>
              <figure className="front" id="cover">
-             <h2>HackABull kills the project</h2>    
+             <img src="../img/coverpage.png" width="100%" height="100%" /> 
          </figure>
-
          </div>
          
      </div>
-
-
 <div className="btncontainer">
 <button className="turnbtn" onClick={this.turnLeft}>Prev</button> <button className="turnbtn" onClick={this.turnRight}>Next</button>
 </div>
 </div> 
   }
 }
-
 export default FlipPage
