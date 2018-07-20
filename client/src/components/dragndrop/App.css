@@ -9,9 +9,9 @@
   text-align: center;
 }
 
-.wip {
+.readyItem {
   position: center;
-  width: 150px;
+  width: 200px;
   height: 100vh;
   left: 0;
   top: 10px;
@@ -31,22 +31,21 @@
 
 .task-header {
 display: inline-block;
-background-color: skyblue;
 width: 100%;
 padding: 0;
 }
 
 .droppable {
   position: absolute;
-  top: 27px;
-  width: 150px;
-  height: 100vh;
-
+  top: 125px;
+  width: 35%;
+  left: 835px;
+  height: 600px;
+z-index: 999;
   right: 0;
   top: 10;
   padding: 10px;
-  background-color: grey;
-  border-left: 1px dotted;
+  border 1px dotted;
 }
 
 .draggable {
