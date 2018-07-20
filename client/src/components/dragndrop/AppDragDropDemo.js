@@ -5,9 +5,9 @@ import './App.css';
 export default class AppDragDropDemo extends Component {
     state = {
         tasks: [
-            {name:"Learn Angular",category:"wip", bgcolor: "yellow"},
-            {name:"React", category:"wip", bgcolor:"blue"},
-            {name:"Vue", category:"complete", bgcolor:"green"}
+            {name:"Learn Angular",category:"readyItem", bgcolor: "yellow"},
+            {name:"React", category:"readyItem", bgcolor:"blue"},
+            {name:"Vue", category:"readyItem", bgcolor:"green"}
           ]
     }
 
@@ -38,8 +38,8 @@ export default class AppDragDropDemo extends Component {
 
     render() {
         var tasks = {
-            wip: [],
-            complete: []
+            readyItem: [],
+            dropped: []
         }
 
         this.state.tasks.forEach ((t) => {
@@ -50,25 +50,24 @@ export default class AppDragDropDemo extends Component {
                     className="draggable"
                     style = {{backgroundColor: t.bgcolor}}
                 >
-                    {t.name}
                 </div>
             );
         });
 
         return (
             <div className="container-drag">
-                <h2 className="header">DRAG & DROP DEMO</h2>
-                <div className="wip"
+                <h2 className="header">Baby Bear Books</h2>
+                <div className="readyItem"
                     onDragOver={(e)=>this.onDragOver(e)}
-                    onDrop={(e)=>{this.onDrop(e, "wip")}}>
-                    <span className="task-header">WIP</span>
-                    {tasks.wip}
+                    onDrop={(e)=>{this.onDrop(e, "readyItem")}}>
+                    <span className="task-header">Drag Me!</span>
+                    {tasks.readyItem}
                 </div>
                 <div className="droppable" 
                     onDragOver={(e)=>this.onDragOver(e)}
-                    onDrop={(e)=>this.onDrop(e, "complete")}>
-                    <span className="task-header">COMPLETED</span>
-                    {tasks.complete}
+                    onDrop={(e)=>this.onDrop(e, "dropped")}>
+                    <span className="task-header"></span>
+                    {tasks.dropped}
                 </div>
             </div>
         );
