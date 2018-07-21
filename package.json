@@ -1,7 +1,7 @@
 {
-  "name": "mern",
+  "name": "babybeardemo",
   "version": "1.0.0",
-  "description": "Mern Demo",
+  "description": "Zoo Demo",
   "main": "server.js",
   "scripts": {
     "server": "node server.js",
@@ -18,7 +18,10 @@
     "nodemon": "^1.11.0"
   },
   "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
     "express": "^4.15.4",
+    "mongoose": "^5.2.4",
     "react-router-dom": "^4.3.1"
   }
 }

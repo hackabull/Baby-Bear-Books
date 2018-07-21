@@ -24,7 +24,7 @@ export default class AppDragDropDemo extends Component {
        let id = ev.dataTransfer.getData("id");
        
        let tasks = this.state.tasks.filter((task) => {
-           if (task.name == id) {
+           if (task.name === id) {
                task.category = cat;
            }
            return task;
