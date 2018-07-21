@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import './App.css';
-import FlipPage from '../flipPage/FlipPage.js'
+
 
 export default class AppDragDropDemo extends Component {
     state = {
         tasks: [
-            {name:"Learn Angular",category:"readyItem", bgcolor: "yellow"},
-            {name:"React", category:"readyItem", bgcolor:"blue"},
-            {name:"Vue", category:"readyItem", bgcolor:"green"}
+            {name:"animal",category:"readyItem", bgcolor: "yellow"},
+            {name:"letters", category:"readyItem", bgcolor:"blue"},
+            {name:"numbers", category:"readyItem", bgcolor:"green"}
           ]
     }
 
@@ -57,22 +57,17 @@ export default class AppDragDropDemo extends Component {
         return (
             <div className="container-drag">
                 <h2 className="header">Baby Bear Books</h2>
-                <div className="readyItems"
+                <div className="readyItem"
                     onDragOver={(e)=>this.onDragOver(e)}
-                    onDrop={(e)=>{this.onDrop(e, "readItems")}}>
+                    onDrop={(e)=>{this.onDrop(e, "readyItem")}}>
                     <span className="task-header">Drag Me!</span>
-                    {tasks.readyItems}
+                    {tasks.readyItem}
                 </div>
-
-                <FlipPage />
-                 
                 <div className="droppable" 
-                 
                     onDragOver={(e)=>this.onDragOver(e)}
                     onDrop={(e)=>this.onDrop(e, "dropped")}>
-                     <span className="task-header"></span>
-                     {tasks.dropped}
-
+                    <span className="task-header"></span>
+                    {tasks.dropped}
                 </div>
             </div>
         );

@@ -91,17 +91,13 @@ turnRight()
              <figure className="front" id="cover">
              <img src="../img/coverpage.png" width="100%" height="100%" /> 
          </figure>
-
          </div>
          
      </div>
-
-
 <div className="btncontainer">
 <button className="turnbtn" onClick={this.turnLeft}>Prev</button> <button className="turnbtn" onClick={this.turnRight}>Next</button>
 </div>
 </div> 
   }
 }
-
 export default FlipPage
