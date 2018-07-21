@@ -76,7 +76,7 @@ turnRight()
              <figure className="back">
              <br />
              <NamePage />
-             <img className="gif1" src="https://img00.deviantart.net/31bf/i/2011/177/f/e/game_background_concept_by_legacyofpiracy-d3k3a4k.jpg" />
+             <img className="gif1" src="https://img00.deviantart.net/31bf/i/2011/177/f/e/game_background_concept_by_legacyofpiracy-d3k3a4k.jpg" alt="welcome to the zoo" />
              <h2>My name is</h2>
              <h3>and today I'm going to the Zoo!</h3>
              </figure>
@@ -89,7 +89,7 @@ turnRight()
          <div className="right">
              <figure className="back"></figure>
              <figure className="front" id="cover">
-             <img src="../img/coverpage.png" width="100%" height="100%" /> 
+             <img src="../img/coverpage.png" width="100%" height="100%" alt="cover page zoo" /> 
          </figure>
          </div>
          
