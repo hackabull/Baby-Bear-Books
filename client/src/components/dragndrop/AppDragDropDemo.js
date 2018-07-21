@@ -1,13 +1,16 @@
 import React, { Component } from 'react';
 import './App.css';
+import banana from "../image/cartoonyBananas.png"
+import burger from "../image/hamburger.png"
+import lolli from "../image/lollipop.png"
 
 
 export default class AppDragDropDemo extends Component {
     state = {
         tasks: [
-            {name:"animal",category:"readyItem", bgcolor: "yellow"},
-            {name:"letters", category:"readyItem", bgcolor:"blue"},
-            {name:"numbers", category:"readyItem", bgcolor:"green"}
+            {name:"animal",category:"readyItem", bgimage: banana},
+            {name:"burger", category:"readyItem", bgimage: burger},
+            {name:"lolli", category:"readyItem", bgimage: lolli}
           ]
     }
 
@@ -48,8 +51,9 @@ export default class AppDragDropDemo extends Component {
                     onDragStart = {(e) => this.onDragStart(e, t.name)}
                     draggable
                     className="draggable"
-                    style = {{backgroundColor: t.bgcolor}}
+                    id = {t.name}
                 >
+                {/* <img src={hello1} alt="hello"/> */}
                 </div>
             );
         });
