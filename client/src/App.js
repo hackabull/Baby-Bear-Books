@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import './index';
 import FlipPage from './components/flipPage/FlipPage.js';
-import AppDragDropDemo from './components/dragndrop/AppDragDropDemo';
+import DragDrop from './components/dragndrop/DragDrop';
 
 import Intro from "./components/pages/Intro";
 // import Page1 from "./components/pages/Page1";
@@ -34,7 +34,7 @@ class App extends Component {
       </Router>
 
  <FlipPage />
- <AppDragDropDemo />
+ <DragDrop />
 
      
 
