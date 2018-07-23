@@ -44,8 +44,25 @@ class FlipPage extends Component {
         setTimeout(function () { right[si - 1].style.zIndex = "auto"; }, 350);
     }
 
+    // constructor(props) {
+    //     super(props);
+    //     this.state = { value: '' };
+
+    //     this.handleChange = this.handleChange.bind(this);
+    //     this.handleSubmit = this.handleSubmit.bind(this);
+    // }
+
+    // handleChange(event) {
+    //     this.setState({ value: event.target.value });
+    // }
+
+    // handleSubmit(event) {
+    //     alert('A name was submitted: ' + this.state.value);
+    // }
+
     render() {
-        return <div className="book-section">
+        return (
+        <div className="book-section">
             <div className="container">
                 <div className="right">
                     <figure className="back" id="back-cover"></figure>
@@ -66,15 +83,19 @@ class FlipPage extends Component {
 
                 <div className="right">
                     <figure className="back">Page 3
-                    </figure>
+                    </figure> 
                     <figure className="front">
                         <div className="container">
-                            <img src="../img/rightindex.png" width="100%" height="680px" />
-                            <p id="indexText">
+                            {/* <img src="../img/rightindex.png" width="100%" height="680px" /> */}
+                            <NamePage />
+                            {/* <p id="indexText">
                                 This Book Belongs Too: <br />
-                                <input value="" id="first_name2" type="text" className="validate" />
+                                <form onSubmit={this.handleSubmit}>
+                                    <input type="text" value={this.state.value} onChange={this.handleChange} />
+                                    <input type="submit" value="Submit" />
+                                </form>
                                 <NamePage />
-                            </p>
+                            </p> */}
                         </div>
                     </figure>
                 </div>
@@ -99,6 +120,8 @@ class FlipPage extends Component {
                 <button className="turnbtn" onClick={this.turnLeft}>Prev</button> <button className="turnbtn" onClick={this.turnRight}>Next</button>
             </div>
         </div>
+        );
     }
 }
+
 export default FlipPage
