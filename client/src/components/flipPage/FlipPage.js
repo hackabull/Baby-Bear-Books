@@ -44,57 +44,39 @@ class FlipPage extends Component {
         setTimeout(function () { right[si - 1].style.zIndex = "auto"; }, 350);
     }
 
-
     render() {
         return <div className="book-section">
-            <div className="container">
-                <div className="right">
-                    <figure className="back" id="back-cover"></figure>
-                    <figure className="front"></figure>
-                </div>
-                <div className="right">
-                    <figure className="back"></figure>
-                    <figure className="front"></figure>
-                </div>
-                <div className="right">
-                    <figure className="back"></figure>
-                    <figure className="front"></figure>
-                </div>
-                <div className="right">
-                    <figure className="back"></figure>
-                    <figure className="front">
-                    </figure>
-                </div>
-
-                <div className="right">
-                    <figure className="back">
-                        <br />
-                        <NamePage />
-                        <img className="gif1" src="https://img00.deviantart.net/31bf/i/2011/177/f/e/game_background_concept_by_legacyofpiracy-d3k3a4k.jpg" />
-                        <h2>My name is</h2>
-                        <h3>and today I'm going to the Zoo!</h3>
-                    </figure>
-                </div>
-
-                <div className="right">
-                    <figure className="back">
-                        <h2>Book Heading</h2>
-                    </figure>
-                </div>
-
-                <div className="right">
-                    <figure className="back"></figure>
-                    <figure className="front" id="cover">
-                        {/* <img src="../img/coverpage.png" width="100%" height="100%" />  */}
-                        <div className="container">
-                            <img id="coverImage" src="../img/cover.png" width="105%" height="680px"/>
-                            <p className="bookText">
-                                A Day At The
-                            </p>
-                        </div>
-                    </figure>
-                </div>
+         <div className="container">
+            <div className="right">
+                 <figure className="back" id="back-cover"></figure>
+                 <figure className="front">Page 10</figure>
+             </div>
+             <div className="right">
+                 <figure className="back">Page 9</figure>
+                 <figure className="front">Page 8</figure>
+             </div>
+             <div className="right">
+                 <figure className="back">Page 7</figure>
+                 <figure className="front">Page 6</figure>
+             </div>
+             <div className="right">
+                 <figure className="back">Page 5</figure>
+                 <figure className="front">Page 4</figure>
             </div>
+
+        <div className="right">
+            <figure className="back">Page 3</figure>
+            <figure className="front">Page 2</figure>
+       </div>
+    
+             <div className="right">
+                 <figure className="back">Page 1 <NamePage /></figure>
+                 <figure className="front" id="cover">
+                 <img src="../img/coverpage.png" width="100%" height="100%" /> 
+             </figure>
+             </div>
+             
+         </div>
 
 
             <div className="btncontainer">
