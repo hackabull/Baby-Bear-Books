@@ -7,7 +7,7 @@ class NamePage extends Component {
         return <div className="container">
            
             <div className="input-field col s6">
-                {/* <input value="" id="first_name2" type="text" className="validate" style="text-align: center"> */}
+                {/* <input value="" id="first_name2" type="text" className="validate" /> */}
             </div>
           
 

@@ -65,7 +65,7 @@ h1 {
 
 .bird-container {
   position: absolute;
-  top: 20%;
+  top: -10%;
   left: -10%;
   -webkit-transform: scale(0) translateX(-10vw);
           transform: scale(0) translateX(-10vw);
