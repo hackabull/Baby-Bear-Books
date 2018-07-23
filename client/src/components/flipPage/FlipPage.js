@@ -72,7 +72,12 @@ class FlipPage extends Component {
              <div className="right">
                  <figure className="back">Page 1 <NamePage /></figure>
                  <figure className="front" id="cover">
-                 <img src="../img/coverpage.png" width="100%" height="100%" /> 
+                    <div className="container">
+                        <img id="coverImage" src="../img/cover.png" width="105%" height="680px"/>
+                        <p className="bookText">
+                            A Day At The
+                        </p>
+                    </div>
              </figure>
              </div>
              

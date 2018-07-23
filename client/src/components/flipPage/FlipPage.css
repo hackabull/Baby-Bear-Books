@@ -118,11 +118,8 @@ body{
 } */
 
 .gif1 {
-
 height: 400px;
 width: 550px;
-
-
 }
 
 .btncontainer {
@@ -130,10 +127,6 @@ width: 550px;
 	right: 45%;
  text-align: center;
 
-}
-
-#coverImage {
-	position: relative;
 }
 
 .bookText {
@@ -145,7 +138,6 @@ width: 550px;
 p {
 	font-family: 'Cabin Sketch', cursive;
 	font-family: 'Fredericka the Great', cursive;
-	/* margin-top: -500px; */
 	font-size: 3rem;
 	font-weight: bold;
 }
