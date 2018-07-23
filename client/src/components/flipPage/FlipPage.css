@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great');
+
 body{
 	margin:0;
 	background-color: #ffecc6;
@@ -107,13 +109,13 @@ body{
 	text-align: center;
 	/* padding: 0 30px; */
 }
-.front#cover h1{
+/* .front#cover h1{
 	color: #fff;
-}
-.front#cover p{
+} */
+/* .front#cover p{
 	color: rgba(0,0,0,0.8);
 	font-size: 14px;
-}
+} */
 
 .gif1 {
 
@@ -128,4 +130,22 @@ width: 550px;
 	right: 45%;
  text-align: center;
 
+}
+
+#coverImage {
+	position: relative;
+}
+
+.bookText {
+	position: absolute;
+	text-align: center;
+	top: 30px;
+}
+
+p {
+	font-family: 'Cabin Sketch', cursive;
+	font-family: 'Fredericka the Great', cursive;
+	/* margin-top: -500px; */
+	font-size: 3rem;
+	font-weight: bold;
 }
