@@ -86,36 +86,14 @@ class FlipPage extends Component {
                     <figure className="back"></figure>
                     <figure className="front" id="cover">
                         {/* <img src="../img/coverpage.png" width="100%" height="100%" />  */}
-                        <div className="container" id="coverPage">
-                            <img src="../img/cover.png" width="105%" height="680px"/>
-                            <p className="centered">
-                                A Day At the
+                        <div className="container">
+                            <img id="coverImage" src="../img/cover.png" width="105%" height="680px"/>
+                            <p className="bookText">
+                                A Day At The
                             </p>
                         </div>
                     </figure>
                 </div>
-
-
-         <div className="right">
-             <figure className="back">
-             <br />
-             <NamePage />
-             <img className="gif1" src="https://img00.deviantart.net/31bf/i/2011/177/f/e/game_background_concept_by_legacyofpiracy-d3k3a4k.jpg" alt="welcome to the zoo" />
-             <h2>My name is</h2>
-             <h3>and today I'm going to the Zoo!</h3>
-             </figure>
-             
-             <figure className="front">
-             <h2>Book Heading</h2>
-             
-            </figure>
-         </div>
-         <div className="right">
-             <figure className="back"></figure>
-             <figure className="front" id="cover">
-             <img src="../img/coverpage.png" width="100%" height="100%" alt="cover page zoo" /> 
-         </figure>
-         </div>
             </div>
 
 

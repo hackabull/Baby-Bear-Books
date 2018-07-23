@@ -132,32 +132,20 @@ width: 550px;
 
 }
 
-#coverPage {
-	z-index: 1;
-    position: relative;
-    overflow: visible;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 42rem;
-    background-blend-mode: soft-light;
-    background-size: initial;
-	background-position: center center;
-	height: fit-content;
-	/* height: 10rem; */
-    /* padding: 2rem; */
-    /* margin: 140px; */
+#coverImage {
+	position: relative;
 }
 
-.container-content {
-	position: relative;
+.bookText {
+	position: absolute;
 	text-align: center;
+	top: 30px;
 }
 
 p {
 	font-family: 'Cabin Sketch', cursive;
 	font-family: 'Fredericka the Great', cursive;
 	/* margin-top: -500px; */
-	/* font-size: 3rem; */
+	font-size: 3rem;
 	font-weight: bold;
 }
