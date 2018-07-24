@@ -16,5 +16,6 @@ Express
 - Clickable map of the zoo for each animal.
 - Sounds added i.e. monkey eating the banana makes an eating sound.
 - Make the drag and drop feature mobile friendly.
+- Authentication: log in to keep track of which books you've read.
 
-[Read our first book here](https://babybearbooks.herokuapp.com/)
+# [Read our first book here](https://babybearbooks.herokuapp.com/)
