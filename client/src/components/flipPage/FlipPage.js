@@ -63,72 +63,90 @@ class FlipPage extends Component {
 
     render() {
         return (
-        <div className="book-section">
-            <div className="container">
-                <div className="right">
-                    <figure className="back" id="back-cover"></figure>
-                    <figure className="front">Page 10</figure>
-                </div>
-                <div className="right">
-                    <figure className="back">Page 9</figure>
-                    <figure className="front">Page 8</figure>
-                </div>
-                <div className="right">
-                    <figure className="back">Page 7</figure>
-                    <figure className="front">Page 6</figure>
-                </div>
-                <div className="right">
-                    <figure className="back">Page 5</figure>
-                    <figure className="front">
-                        <div className="container">
-                            <img src="../img/entranceright1.png" width="100%" height="680px" />
-                            <p id="entranceRightText">
-                                The Zoo is so big with so much to see, <br />
-                                so they decided to start with the Monkeys.
+            <div className="book-section">
+                <div className="container">
+                    <div className="right">
+                        <figure className="back" id="back-cover"></figure>
+                        <figure className="front">Page 10</figure>
+                    </div>
+                    <div className="right">
+                        <figure className="back">Page 9</figure>
+                        <figure className="front">Page 8</figure>
+                    </div>
+                    <div className="right">
+                        <figure className="back">Page 7</figure>
+                        <figure className="front">
+                            <div className="container">
+                                <img src="../img/monkeyright.png" width="100%" height="680px" />
+                                <p id="monkeyRightText">
+                                    But what in <br />the world <br />
+                                    do Monkeys eat?
                             </p>
-                        </div>
-                    </figure>
-                </div>
+                            </div>
+                        </figure>
+                    </div>
+                    <div className="right">
+                        <figure className="back">
+                            <div className="container">
+                                <img src="../img/monkeyleft.png" width="100%" height="680px" />
+                                <p id="monkeyLeftText">
+                                    The Monkeys <br />
+                                    look hungry <br />
+                                    let's give <br /> 
+                                    them a treat.
+                            </p>
+                            </div>
+                        </figure>
+                        <figure className="front">
+                            <div className="container">
+                                <img src="../img/entranceright1.png" width="100%" height="680px" />
+                                <p id="entranceRightText">
+                                    The Zoo is so big with so much to see, <br />
+                                    so they decided to start with the Monkeys.
+                            </p>
+                            </div>
+                        </figure>
+                    </div>
 
-                <div className="right">
-                    <figure className="back">
-                    <div className="container">
-                            <img src="../img/entranceleft1.png" width="100%" height="680px" />
-                            <p id="entranceLeftText">
-                                Name's family was bored with nothing to do, <br />
-                                so they decided to go to the Zoo.
+                    <div className="right">
+                        <figure className="back">
+                            <div className="container">
+                                <img src="../img/entranceleft1.png" width="100%" height="680px" />
+                                <p id="entranceLeftText">
+                                    Name's family was bored with nothing to do, <br />
+                                    so they decided to go to the Zoo.
                             </p>
-                        </div>
-                    </figure> 
-                    <figure className="front">
-                        <div className="container">
-                            <NamePage />
-                            <Birds />
-                        </div>
-                    </figure>
-                </div>
+                            </div>
+                        </figure>
+                        <figure className="front">
+                            <div className="container">
+                                <NamePage />
+                                <Birds />
+                            </div>
+                        </figure>
+                    </div>
 
-                <div className="right">
-                    <figure className="back">
-                        <div className="container">
-                            <Birds />
-                            <img src="../img/leftindex.png" width="100%" height="680px" />
-                        </div>
-                    </figure>
-                    <figure className="front" id="cover">
-                        <div className="container">
-                            <img src="../img/cover2.png" width="105%" height="680px" />
-                            <p id="coverText">
-                                A Day At The Zoo
+                    <div className="right">
+                        <figure className="back">
+                            <div className="container">
+                                <Birds />
+                                <img src="../img/leftindex.png" width="100%" height="680px" />
+                            </div>
+                        </figure>
+                        <figure className="front" id="cover">
+                            <div className="container">
+                                <img src="../img/cover2.png" width="105%" height="680px" />
+                                <p id="coverText">
+                                    A Day At The Zoo
                             </p>
-                        </div>
-                    </figure>
+                            </div>
+                        </figure>
+                    </div>
+                </div>
+                <div className="btncontainer">
+                    <button className="turnbtn" onClick={this.turnLeft}>Prev</button> <button className="turnbtn" onClick={this.turnRight}>Next</button>
                 </div>
             </div>
-            <div className="btncontainer">
-                <button className="turnbtn" onClick={this.turnLeft}>Prev</button> <button className="turnbtn" onClick={this.turnRight}>Next</button>
-            </div>
-        </div>
         );
     }
 }
