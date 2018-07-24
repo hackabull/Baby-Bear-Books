@@ -67,14 +67,96 @@ class FlipPage extends Component {
                 <div className="container">
                     <div className="right">
                         <figure className="back" id="back-cover"></figure>
-                        <figure className="front">Page 10</figure>
+                        <figure className="front">
+                            <div className="container">
+                                <img src="../img/parrotright.png" width="100%" height="680px" />
+                                <p id="parrotRightText">
+                                    Dummy Text
+                            </p>
+                            </div>
+                        </figure>
                     </div>
                     <div className="right">
-                        <figure className="back">Page 9</figure>
-                        <figure className="front">Page 8</figure>
+                        <figure className="back">
+                            <div className="container">
+                                <img src="../img/parrotleft.png" width="100%" height="680px" />
+                                <p id="parrotLeftText">
+                                    Dummy Text
+                            </p>
+                            </div>
+                        </figure>
+                        <figure className="front">
+                            <div className="container">
+                                <img src="../img/lionright.png" width="100%" height="680px" />
+                                <p id="lionRightText">
+                                    Dummy Text
+                            </p>
+                            </div>
+                        </figure>
                     </div>
                     <div className="right">
-                        <figure className="back">Page 7</figure>
+                        <figure className="back">
+                            <div className="container">
+                                <img src="../img/lionleft.png" width="100%" height="680px" />
+                                <p id="lionLeftText">
+                                    Dummy Text
+                            </p>
+                            </div>
+                        </figure>
+                        <figure className="front">
+                            <div className="container">
+                                <img src="../img/penguinright.png" width="100%" height="680px" />
+                                <p id="penguinRightText">
+                                    Dummy Text
+                            </p>
+                            </div>
+                        </figure>
+                    </div>
+                    <div className="right">
+                        <figure className="back">
+                            <div className="container">
+                                <img src="../img/penguinleft.png" width="100%" height="680px" />
+                                <p id="penguinLeftText">
+                                    Dummy Text
+                            </p>
+                            </div>
+                        </figure>
+                        <figure className="front">
+                            <div className="container">
+                                <img src="../img/leopardright.png" width="100%" height="680px" />
+                                <p id="leopardRightText">
+                                    Dummy Text
+                            </p>
+                            </div>
+                        </figure>
+                    </div>
+                    <div className="right">
+                        <figure className="back">
+                            <div className="container">
+                                <img src="../img/leopardleft.png" width="100%" height="680px" />
+                                <p id="leopardLeftText">
+                                    Dummy Text
+                            </p>
+                            </div>
+                        </figure>
+                        <figure className="front">
+                            <div className="container">
+                                <img src="../img/flamingoright.png" width="100%" height="680px" />
+                                <p id="flamingoRightText">
+                                    Dummy Text
+                            </p>
+                            </div>
+                        </figure>
+                    </div>
+                    <div className="right">
+                        <figure className="back">
+                            <div className="container">
+                                <img src="../img/flamingoleft.png" width="100%" height="680px" />
+                                <p id="flamingoLeftText">
+                                    Dummy Text
+                            </p>
+                            </div>
+                        </figure>
                         <figure className="front">
                             <div className="container">
                                 <img src="../img/monkeyright.png" width="100%" height="680px" />
@@ -92,7 +174,7 @@ class FlipPage extends Component {
                                 <p id="monkeyLeftText">
                                     The Monkeys <br />
                                     look hungry <br />
-                                    let's give <br /> 
+                                    let's give <br />
                                     them a treat.
                             </p>
                             </div>
