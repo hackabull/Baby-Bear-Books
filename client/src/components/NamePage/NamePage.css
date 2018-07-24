@@ -65,7 +65,7 @@ h1 {
 
 .bird-container {
   position: absolute;
-  top: 20%;
+  top: -10%;
   left: -10%;
   -webkit-transform: scale(0) translateX(-10vw);
           transform: scale(0) translateX(-10vw);
@@ -249,3 +249,21 @@ h1 {
             transform: translateY(0vh) translateX(110vw) scale(0.45);
   }
 }
+
+#nametext {
+    /* width: 50%; */
+    padding: 10px;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+#submit {
+        width: 20%;
+        padding: 10px;
+        margin-left: 10px;
+        display: inline-block;
+        border: 1px solid black;
+        border-radius: 4px;
+}
+

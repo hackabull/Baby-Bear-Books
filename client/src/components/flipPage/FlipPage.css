@@ -118,26 +118,35 @@ body{
 } */
 
 .gif1 {
-height: 400px;
-width: 550px;
+	height: 400px;
+	width: 550px;
 }
 
 .btncontainer {
- position: relative;
-	right: 45%;
- text-align: center;
+ 	position: relative;
+ 	right: 45%;
+ 	text-align: center;
 
 }
 
-.bookText {
+#coverText {
 	position: absolute;
 	text-align: center;
 	top: 30px;
-}
-
-p {
 	font-family: 'Cabin Sketch', cursive;
 	font-family: 'Fredericka the Great', cursive;
-	font-size: 3rem;
+	font-size: 3.5rem;
 	font-weight: bold;
 }
+
+#indexText {
+	position: absolute;
+	text-align: center;
+	top: 10px;
+	font-family: 'Cabin Sketch', cursive;
+	font-family: 'Fredericka the Great', cursive;
+	font-size: 2rem;
+	font-weight: bold;
+	margin-left: 20px;
+}
+
