@@ -31,7 +31,7 @@ class NamePage extends React.Component {
             <div className="container">
                 <img src="../img/rightindex.png" width="100%" height="680px" />
                 <p id="indexText">
-                    This Book Belongs Too: <br />
+                    This Book Belongs To: <br />
                     <form onSubmit={this.handleSubmit}>
                         <input id="nametext" type="text" value={this.state.value} onChange={this.handleChange} />
                         <input id="submit" type="submit" value="Submit" />
