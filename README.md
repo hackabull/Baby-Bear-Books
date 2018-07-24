@@ -1,59 +1,20 @@
-# storybook
+This is the first in what could become a series of interactive storyboooks meant for parents and kids to spend screen time together in a fun and defined way.
 
-## Deployment (Heroku)
+Type in your own name on the first pages of the book and follow along as you visit animals at the zoo.
 
-### Create a Git Repo
+This site has the look and feel of a book: images that take up the entire page and pages that "flip" on the next page click. Readers drag and drop images to move the plot of the story forward. Each book is short enough to be read in ten minutes. We are envisioning a new genre of learning tools that both educate kids and give parents a chance to connect with their children on a shared screen for a capped amount of time. 
 
-Once you're ready to deploy, start by making sure your project is a git repository. If so, proceed to the next section, otherwise run the following commands in your terminal:
+# Planned Technologies
+React Drag and Drop
+Bootstrap
+[NPM Flip Page](https://www.npmjs.com/package/react-flip-page)
+Mongo DB
+Express
 
-```
-git init
-git add .
-git commit -m "Initial commit"
-```
+# Future development
+- Add more books (or visit more animals at the zoo).
+- Clickable map of the zoo for each animal.
+- Sounds added i.e. monkey eating the banana makes an eating sound.
+- Make the drag and drop feature mobile friendly.
 
-### Heroku
-
-Make sure that you have a Heroku app created for this project. If so, proceed to the next section, otherwise run the following command in your terminal:
-
-```
-heroku create
-```
-
-Optionally add an argument for your application's name after `create`, e.g.
-
-```
-heroku myAwesomeApp
-```
-
-### Deploying
-
-#### Option 1
-
-Use the deploy script inside of the outer `package.json`
-
-After confirming that you have an up to date git repository and a Heroku app created, run the following command to deploy:
-
-```
-yarn deploy
-```
-
-If all previous steps were followed correctly, your application should be deployed to Heroku!
-
-#### Option 2
-
-Manually deploy 
-
-After confirming that you have an up to date git repository and a Heroku app created, complete the following:
-
-1. Build the React app for production by running the following command:
-
-```
-yarn build
-```
-
-2. Add and commit all changes to git
-
-3. Push to Heroku
-
-If all previous steps were followed correctly, your application should be deployed to Heroku!
+[Read our first book here](https://babybearbooks.herokuapp.com/)
