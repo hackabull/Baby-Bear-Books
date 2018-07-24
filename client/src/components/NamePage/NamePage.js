@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "./NamePage.css";
-import "./NamePage.scss";
 
 class NamePage extends React.Component {
     constructor(props) {

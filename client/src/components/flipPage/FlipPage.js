@@ -79,11 +79,26 @@ class FlipPage extends Component {
                 </div>
                 <div className="right">
                     <figure className="back">Page 5</figure>
-                    <figure className="front">Page 4</figure>
+                    <figure className="front">
+                        <div className="container">
+                            <img src="../img/entranceright1.png" width="100%" height="680px" />
+                            <p id="entranceRightText">
+                                The Zoo is so big with so much to see, <br />
+                                so they decided to start with the Monkeys.
+                            </p>
+                        </div>
+                    </figure>
                 </div>
 
                 <div className="right">
-                    <figure className="back">Page 3
+                    <figure className="back">
+                    <div className="container">
+                            <img src="../img/entranceleft1.png" width="100%" height="680px" />
+                            <p id="entranceLeftText">
+                                Name's family was bored with nothing to do, <br />
+                                so they decided to go to the Zoo.
+                            </p>
+                        </div>
                     </figure> 
                     <figure className="front">
                         <div className="container">

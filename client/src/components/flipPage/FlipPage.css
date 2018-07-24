@@ -150,3 +150,22 @@ body{
 	margin-left: 20px;
 }
 
+#entranceLeftText {
+	position: absolute;
+	text-align: center;
+	bottom: 80px;
+	left: 30px;
+	font-family: 'Fredericka the Great', cursive;
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+#entranceRightText {
+	position: absolute;
+	text-align: center;
+	top: 20px;
+	font-family: 'Fredericka the Great', cursive;
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
