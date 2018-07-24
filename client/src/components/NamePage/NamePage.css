@@ -1,8 +1,8 @@
-*,
+/* *,
 *::before,
 *::after {
   box-sizing: border-box;
-}
+} */
 
 h1 {
     font-family: 'Cabin Sketch', cursive;
@@ -25,7 +25,7 @@ h1 {
   /* padding: 2rem; */
 }
 
-.bird {
+/* .bird {
   background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/174479/bird-cells.svg);
   background-size: auto 100%;
   width: 88px;
@@ -248,7 +248,7 @@ h1 {
     -webkit-transform: translateY(0vh) translateX(110vw) scale(0.45);
             transform: translateY(0vh) translateX(110vw) scale(0.45);
   }
-}
+} */
 
 #nametext {
     /* width: 50%; */

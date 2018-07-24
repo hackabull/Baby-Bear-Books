@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import './FlipPage.css';
 import NamePage from '../NamePage/NamePage.js'
+import Birds from '../birds/birds.js'
 
 
 var right = document.getElementsByClassName("right");
@@ -86,16 +87,8 @@ class FlipPage extends Component {
                     </figure> 
                     <figure className="front">
                         <div className="container">
-                            {/* <img src="../img/rightindex.png" width="100%" height="680px" /> */}
                             <NamePage />
-                            {/* <p id="indexText">
-                                This Book Belongs Too: <br />
-                                <form onSubmit={this.handleSubmit}>
-                                    <input type="text" value={this.state.value} onChange={this.handleChange} />
-                                    <input type="submit" value="Submit" />
-                                </form>
-                                <NamePage />
-                            </p> */}
+                            <Birds />
                         </div>
                     </figure>
                 </div>
@@ -103,6 +96,7 @@ class FlipPage extends Component {
                 <div className="right">
                     <figure className="back">
                         <div className="container">
+                            <Birds />
                             <img src="../img/leftindex.png" width="100%" height="680px" />
                         </div>
                     </figure>
