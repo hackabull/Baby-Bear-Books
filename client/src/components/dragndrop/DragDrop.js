@@ -6,6 +6,7 @@ import lolli from "../image/lollipop.png"
 
 
 export default class DragDrop extends Component {
+    //lines 10-14 need to go in app.js & just called here
     state = {
         tasks: [
             {name:"banana",category:"readyItem", bgimage: banana},
@@ -33,6 +34,7 @@ export default class DragDrop extends Component {
            return task;
        });
 
+       //needs to go in app.js and passed as props this.props.nameOfFunction() -- in app.js they will be state
        this.setState({
            ...this.state,
            tasks
