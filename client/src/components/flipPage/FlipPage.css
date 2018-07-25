@@ -212,7 +212,7 @@ body{
 #flamingoRightText {
 	position: absolute;
 	text-align: center;
-	bottom: 0;
+	top: 0;
 	right: 220px;
 	font-family: 'Fredericka the Great', cursive;
 	font-size: 1.5rem;
@@ -227,7 +227,7 @@ body{
 #flamingoLeftText {
 	position: absolute;
 	text-align: center;
-	bottom: 0;
+	top: 0;
 	right: 220px;
 	font-family: 'Fredericka the Great', cursive;
 	font-size: 1.5rem;
