@@ -3,12 +3,12 @@
 *::after {
   box-sizing: border-box;
 } */
-
+/* 
 h1 {
     font-family: 'Cabin Sketch', cursive;
     text-align: center;
     font-size: 3rem;
-}
+} */
 
 .container {
   /* z-index: 1; */
@@ -27,6 +27,7 @@ h1 {
 
 #indexText {
     font-size: 2rem;
+    font-family: 'Fredericka the Great', cursive;
 }
 
 #nametext {
@@ -36,6 +37,10 @@ h1 {
     border: 1px solid black;
     border-radius: 4px;
     margin-top: 20px;
+    font-size: 1rem;
+    font-family: 'Fredericka the Great', cursive;
+    font-weight: bold;
+    text-align: center;
 }
 
 #submit {
@@ -46,5 +51,8 @@ h1 {
     border: 1px solid black;
     border-radius: 4px;
     margin-top: 20px;
+    font-size: 1rem;
+    font-family: 'Fredericka the Great', cursive;
+    font-weight: bold;
 }
 
