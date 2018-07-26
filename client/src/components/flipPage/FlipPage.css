@@ -159,9 +159,10 @@ body{
 	font-size: 1.5rem;
 	font-weight: bold;
 	background: 
-    linear-gradient(
+    radial-gradient(
+        rgba(255, 255, 255, 0.75),
         rgba(255, 255, 255, 0.50),
-        rgba(255, 255, 255, 0.50)
+        rgba(255, 255, 255, 0)
     );
 }
 
@@ -173,9 +174,10 @@ body{
 	font-size: 1.5rem;
 	font-weight: bold;
 	background: 
-    linear-gradient(
+    radial-gradient(
+        rgba(255, 255, 255, 0.75),
         rgba(255, 255, 255, 0.50),
-        rgba(255, 255, 255, 0.50)
+        rgba(255, 255, 255, 0)
     );
 }
 
@@ -188,9 +190,10 @@ body{
 	font-size: 1.5rem;
 	font-weight: bold;
 	background: 
-    linear-gradient(
+    radial-gradient(
+        rgba(255, 255, 255, 0.75),
         rgba(255, 255, 255, 0.50),
-        rgba(255, 255, 255, 0.50)
+        rgba(255, 255, 255, 0)
     );
 }
 
@@ -203,9 +206,10 @@ body{
 	font-size: 1.5rem;
 	font-weight: bold;
 	background: 
-    linear-gradient(
+    radial-gradient(
+        rgba(255, 255, 255, 0.75),
         rgba(255, 255, 255, 0.50),
-        rgba(255, 255, 255, 0.50)
+        rgba(255, 255, 255, 0)
     );
 }
 
@@ -218,9 +222,10 @@ body{
 	font-size: 1.5rem;
 	font-weight: bold;
 	background: 
-    linear-gradient(
+    radial-gradient(
+        rgba(255, 255, 255, 0.75),
         rgba(255, 255, 255, 0.50),
-        rgba(255, 255, 255, 0.50)
+        rgba(255, 255, 255, 0)
     );
 }
 
@@ -233,24 +238,26 @@ body{
 	font-size: 1.5rem;
 	font-weight: bold;
 	background: 
-    linear-gradient(
+    radial-gradient(
+        rgba(255, 255, 255, 0.75),
         rgba(255, 255, 255, 0.50),
-        rgba(255, 255, 255, 0.50)
+        rgba(255, 255, 255, 0)
     );
 }
 
 #leopardRightText {
 	position: absolute;
 	text-align: center;
-	bottom: 0;
+	top: 0;
 	right: 220px;
 	font-family: 'Fredericka the Great', cursive;
 	font-size: 1.5rem;
 	font-weight: bold;
 	background: 
-    linear-gradient(
+    radial-gradient(
+        rgba(255, 255, 255, 0.75),
         rgba(255, 255, 255, 0.50),
-        rgba(255, 255, 255, 0.50)
+        rgba(255, 255, 255, 0)
     );
 }
 
@@ -263,9 +270,10 @@ body{
 	font-size: 1.5rem;
 	font-weight: bold;
 	background: 
-    linear-gradient(
+    radial-gradient(
+        rgba(255, 255, 255, 0.75),
         rgba(255, 255, 255, 0.50),
-        rgba(255, 255, 255, 0.50)
+        rgba(255, 255, 255, 0)
     );
 }
 
@@ -278,24 +286,26 @@ body{
 	font-size: 1.5rem;
 	font-weight: bold;
 	background: 
-    linear-gradient(
+    radial-gradient(
+        rgba(255, 255, 255, 0.75),
         rgba(255, 255, 255, 0.50),
-        rgba(255, 255, 255, 0.50)
+        rgba(255, 255, 255, 0)
     );
 }
 
 #penguinLeftText {
 	position: absolute;
 	text-align: center;
-	bottom: 0;
+	top: 0;
 	right: 220px;
 	font-family: 'Fredericka the Great', cursive;
 	font-size: 1.5rem;
 	font-weight: bold;
 	background: 
-    linear-gradient(
+    radial-gradient(
+        rgba(255, 255, 255, 0.75),
         rgba(255, 255, 255, 0.50),
-        rgba(255, 255, 255, 0.50)
+        rgba(255, 255, 255, 0)
     );
 }
 
@@ -308,9 +318,10 @@ body{
 	font-size: 1.5rem;
 	font-weight: bold;
 	background: 
-    linear-gradient(
+    radial-gradient(
+        rgba(255, 255, 255, 0.75),
         rgba(255, 255, 255, 0.50),
-        rgba(255, 255, 255, 0.50)
+        rgba(255, 255, 255, 0)
     );
 }
 
@@ -323,38 +334,41 @@ body{
 	font-size: 1.5rem;
 	font-weight: bold;
 	background: 
-    linear-gradient(
+    radial-gradient(
+        rgba(255, 255, 255, 0.75),
         rgba(255, 255, 255, 0.50),
-        rgba(255, 255, 255, 0.50)
+        rgba(255, 255, 255, 0)
     );
 }
 
 #parrotRightText {
 	position: absolute;
 	text-align: center;
-	bottom: 0;
+	top: 0;
 	right: 220px;
 	font-family: 'Fredericka the Great', cursive;
 	font-size: 1.5rem;
 	font-weight: bold;
 	background: 
-    linear-gradient(
+    radial-gradient(
+        rgba(255, 255, 255, 0.75),
         rgba(255, 255, 255, 0.50),
-        rgba(255, 255, 255, 0.50)
+        rgba(255, 255, 255, 0)
     );
 }
 
 #parrotLeftText {
 	position: absolute;
 	text-align: center;
-	bottom: 0;
+	top: 0;
 	right: 220px;
 	font-family: 'Fredericka the Great', cursive;
 	font-size: 1.5rem;
 	font-weight: bold;
 	background: 
-    linear-gradient(
+    radial-gradient(
+        rgba(255, 255, 255, 0.75),
         rgba(255, 255, 255, 0.50),
-        rgba(255, 255, 255, 0.50)
+        rgba(255, 255, 255, 0)
     );
 }
