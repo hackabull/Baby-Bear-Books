@@ -173,8 +173,8 @@ class FlipPage extends Component {
                                 <img src="../img/monkeyleft.png" width="100%" height="680px" />
                                 <p id="monkeyLeftText">
                                     The Monkeys <br />
-                                    look hungry <br />
-                                    let's give <br />
+                                    look hungry. <br />
+                                    Let's give <br />
                                     them a treat.
                             </p>
                             </div>
