@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
-import banana from "../image/cartoonyBananas.png"
-import burger from "../image/hamburger.png"
+import banana from "../image/banana.png"
+import hotdog from "../image/hotdog.png"
 import lolli from "../image/lollipop.png"
 
 
@@ -10,7 +10,7 @@ export default class DragDrop extends Component {
     state = {
         tasks: [
             {name:"banana",category:"readyItem", bgimage: banana},
-            {name:"burger", category:"readyItem", bgimage: burger},
+            {name:"hotdog", category:"readyItem", bgimage: hotdog},
             {name:"lolli", category:"readyItem", bgimage: lolli}
           ]
     }
@@ -62,11 +62,11 @@ export default class DragDrop extends Component {
 
         return (
             <div className="container-drag">
-                <h2 className="header">Baby Bear Books</h2>
+                <h2 className="header">Baby Bear Books Presents:</h2>
                 <div className="readyItem"
                     onDragOver={(e)=>this.onDragOver(e)}
                     onDrop={(e)=>{this.onDrop(e, "readyItem")}}>
-                    <span className="task-header">Drag Me!</span>
+                    <span className="task-header" id="dragMe">Drag Me!</span>
                     {tasks.readyItem}
                 </div>
                 <div className="droppable" 

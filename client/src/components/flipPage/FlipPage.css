@@ -328,7 +328,7 @@ body{
 #lionLeftText {
 	position: absolute;
 	text-align: center;
-	bottom: 0;
+	top: 0;
 	right: 220px;
 	font-family: 'Fredericka the Great', cursive;
 	font-size: 1.5rem;
@@ -358,6 +358,38 @@ body{
 }
 
 #parrotLeftText {
+	position: absolute;
+	text-align: center;
+	top: 0;
+	right: 220px;
+	font-family: 'Fredericka the Great', cursive;
+	font-size: 1.5rem;
+	font-weight: bold;
+	background: 
+    radial-gradient(
+        rgba(255, 255, 255, 0.75),
+        rgba(255, 255, 255, 0.50),
+        rgba(255, 255, 255, 0)
+    );
+}
+
+#endpageRightText {
+	position: absolute;
+	text-align: center;
+	top: 0;
+	right: 220px;
+	font-family: 'Fredericka the Great', cursive;
+	font-size: 1.5rem;
+	font-weight: bold;
+	background: 
+    radial-gradient(
+        rgba(255, 255, 255, 0.75),
+        rgba(255, 255, 255, 0.50),
+        rgba(255, 255, 255, 0)
+    );
+}
+
+#endpageLeftText {
 	position: absolute;
 	text-align: center;
 	top: 0;

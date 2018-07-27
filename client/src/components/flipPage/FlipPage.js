@@ -45,28 +45,30 @@ class FlipPage extends Component {
         setTimeout(function () { right[si - 1].style.zIndex = "auto"; }, 350);
     }
 
-    // constructor(props) {
-    //     super(props);
-    //     this.state = { value: '' };
-
-    //     this.handleChange = this.handleChange.bind(this);
-    //     this.handleSubmit = this.handleSubmit.bind(this);
-    // }
-
-    // handleChange(event) {
-    //     this.setState({ value: event.target.value });
-    // }
-
-    // handleSubmit(event) {
-    //     alert('A name was submitted: ' + this.state.value);
-    // }
-
     render() {
         return (
             <div className="book-section">
                 <div className="container">
                     <div className="right">
                         <figure className="back" id="back-cover"></figure>
+                        <figure className="front">
+                            <div className="container">
+                                <img src="../img/endpageright.png" width="100%" height="680px" />
+                                <p id="endpageRightText">
+                                    Dummy Text
+                            </p>
+                            </div>
+                        </figure>
+                    </div>
+                    <div className="right">
+                        <figure className="back">
+                            <div className="container">
+                                <img src="../img/endpageleft.png" width="100%" height="680px" />
+                                <p id="endpageLeftText">
+                                    Dummy Text
+                            </p>
+                            </div>
+                        </figure>
                         <figure className="front">
                             <div className="container">
                                 <img src="../img/parrotright.png" width="100%" height="680px" />
