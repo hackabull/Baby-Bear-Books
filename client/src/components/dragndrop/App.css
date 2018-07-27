@@ -18,6 +18,7 @@
   left: 0;
   top: 10px;
   padding: 10px;
+  margin-left: 30px;
   background-color: rgb(207, 207, 207);
   border-right: 1px dotted;
 }
@@ -43,7 +44,7 @@ padding: 0;
   padding-top: 10px;
   padding-bottom: 20px;
   border-bottom: 2px solid black;
-  margin-bottom: 20px;
+  font-size: 1.5rem;
 }
 
 .droppable {
@@ -79,7 +80,44 @@ padding: 0;
   width: 50%;
 }
 
-#lolli {
-  background-image: url('../../components/image/lollipop.png');
+#coffee {
+  background-image: url('../../components/image/coffee.png');
   background-repeat: no-repeat;
+  height: 10%;
+  width: 50%;
+}
+
+#fish {
+  background-image: url('../../components/image/fish.png');
+  background-repeat: no-repeat;
+  height: 10%;
+  width: 80%;
+}
+
+#leaves {
+  background-image: url('../../components/image/leaves.png');
+  background-repeat: no-repeat;
+  height: 13%;
+  width: 80%;
+}
+
+#shrimp {
+  background-image: url('../../components/image/shrimp.png');
+  background-repeat: no-repeat;
+  height: 10%;
+  width: 70%;
+}
+
+#steak {
+  background-image: url('../../components/image/steak.png');
+  background-repeat: no-repeat;
+  height: 10%;
+  width: 60%;
+}
+
+#watermelon {
+  background-image: url('../../components/image/watermelon.png');
+  background-repeat: no-repeat;
+  height: 10%;
+  width: 100%;
 }

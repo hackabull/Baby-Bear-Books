@@ -2,16 +2,26 @@ import React, { Component } from 'react';
 import './App.css';
 import banana from "../image/banana.png"
 import hotdog from "../image/hotdog.png"
-import lolli from "../image/lollipop.png"
+import coffee from "../image/coffee.png"
+import fish from "../image/fish.png"
+import leaves from "../image/leaves.png"
+import shrimp from "../image/shrimp.png"
+import steak from "../image/steak.png"
+import watermelon from "../image/watermelon.png"
 
 
 export default class DragDrop extends Component {
     //lines 10-14 need to go in app.js & just called here
     state = {
         tasks: [
-            {name:"banana",category:"readyItem", bgimage: banana},
+            {name:"fish", category:"readyItem", bgimage: fish},
             {name:"hotdog", category:"readyItem", bgimage: hotdog},
-            {name:"lolli", category:"readyItem", bgimage: lolli}
+            {name:"banana",category:"readyItem", bgimage: banana},
+            {name:"leaves", category:"readyItem", bgimage: leaves},
+            {name:"shrimp", category:"readyItem", bgimage: shrimp},
+            {name:"coffee", category:"readyItem", bgimage: coffee},
+            {name:"steak", category:"readyItem", bgimage: steak},
+            {name:"watermelon", category:"readyItem", bgimage: watermelon}
           ]
     }
 

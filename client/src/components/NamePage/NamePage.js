@@ -28,7 +28,7 @@ class NamePage extends React.Component {
             </div> */}
 
             <div className="container">
-                <img src="../img/rightindex.png" width="100%" height="680px" />
+                <img src="../img/rightindex2.png" width="100%" height="680px" />
                 <p id="indexText">
                     This Book Belongs To: <br />
                     <form onSubmit={this.handleSubmit}>
