@@ -47,22 +47,6 @@ class FlipPage extends Component {
         setTimeout(function () { right[si - 1].style.zIndex = "auto"; }, 350);
     }
 
-    // constructor(props) {
-    //     super(props);
-    //     this.state = { value: '' };
-
-    //     this.handleChange = this.handleChange.bind(this);
-    //     this.handleSubmit = this.handleSubmit.bind(this);
-    // }
-
-    // handleChange(event) {
-    //     this.setState({ value: event.target.value });
-    // }
-
-    // handleSubmit(event) {
-    //     alert('A name was submitted: ' + this.state.value);
-    // }
-
     render() {
         return (
             <div className="book-section">
@@ -71,10 +55,28 @@ class FlipPage extends Component {
                         <figure className="back" id="back-cover"></figure>
                         <figure className="front">
                             <div className="container">
+                                <img src="../img/endpageright.png" width="100%" height="680px" />
+                                <p id="endpageRightText">
+                                    Dummy Text
+                                </p>
+                            </div>
+                        </figure>
+                    </div>
+                    <div className="right">
+                        <figure className="back">
+                            <div className="container">
+                                <img src="../img/endpageleft.png" width="100%" height="680px" />
+                                <p id="endpageLeftText">
+                                    Dummy Text
+                                </p>
+                            </div>
+                        </figure>
+                        {/* <figure className="front">
+                            <div className="container">
                                 <img src="../img/parrotright.png" width="100%" height="680px" />
                                 <p id="parrotRightText">
                                     Dummy Text
-                            </p>
+                                </p>
                             </div>
                         </figure>
                     </div>
@@ -84,15 +86,15 @@ class FlipPage extends Component {
                                 <img src="../img/parrotleft.png" width="100%" height="680px" />
                                 <p id="parrotLeftText">
                                     Dummy Text
-                            </p>
+                                </p>
                             </div>
-                        </figure>
+                        </figure> */}
                         <figure className="front">
                             <div className="container">
                                 <img src="../img/lionright.png" width="100%" height="680px" />
                                 <p id="lionRightText">
                                     Dummy Text
-                            </p>
+                                </p>
                             </div>
                         </figure>
                     </div>
@@ -103,62 +105,67 @@ class FlipPage extends Component {
                                 <img src="../img/lionleft.png" width="100%" height="680px" />
                                 <p id="lionLeftText">
                                     Dummy Text
-                            </p>
-                            
+                                </p>
                             </div>
                         </figure>
                         <figure className="front">
                             <div className="container">
-                                <img src="../img/penguinright.png" width="100%" height="680px" />
-                                <p id="penguinRightText">
+                                <img src="../img/girafferight.png" width="100%" height="680px" />
+                                <p id="giraffeRightText">
                                     Dummy Text
-                            </p>
+                                </p>
                             </div>
                         </figure>
                     </div>
                     <div className="right">
                         <figure className="back">
                             <div className="container">
-                                <img src="../img/penguinleft.png" width="100%" height="680px" />
-                                <p id="penguinLeftText">
+                                <img src="../img/giraffeleft.png" width="100%" height="680px" />
+                                <p id="giraffeLeftText">
                                     Dummy Text
-                            </p>
+                                </p>
                             </div>
                         </figure>
                         <figure className="front">
                             <div className="container">
-                                <img src="../img/leopardright.png" width="100%" height="680px" />
-                                <p id="leopardRightText">
-                                    Dummy Text
-                            </p>
+                                <img src="../img/elephantright2.png" width="100%" height="680px" />
+                                <p id="elephantRightText">
+                                    What fruit should we give these Elephants to eat?
+                                </p>
                             </div>
                         </figure>
                     </div>
                     <div className="right">
                         <figure className="back">
                             <div className="container">
-                                <img src="../img/leopardleft.png" width="100%" height="680px" />
-                                <p id="leopardLeftText">
-                                    Dummy Text
-                            </p>
+                                <img src="../img/elephantleft2.png" width="100%" height="680px" />
+                                <p id="elephantLeftText">
+                                    Elephants are extremely intelligent creatures. With elongated tusks and trunks for high reaches. They sure do enjoy fruit as a treat.
+                                </p>
                             </div>
                         </figure>
                         <figure className="front">
                             <div className="container">
-                                <img src="../img/flamingoright.png" width="100%" height="680px" />
-                                <p id="flamingoRightText">
-                                    Dummy Text
-                            </p>
+                                <img src="../img/alligatorright.png" width="100%" height="680px" />
+                                <p id="flamingoRightText1">
+                                    Flamingos stand tall with vibrant pink feathers, a color they get from this ocean dweller. For flamingos they are a delicious treat.
+                                </p>
+                                <p id="flamingoRightText2">
+                                    Can you guess what kind of sea creature they eat?
+                                </p>
                             </div>
                         </figure>
                     </div>
                     <div className="right">
                         <figure className="back">
                             <div className="container">
-                                <img src="../img/flamingoleft.png" width="100%" height="680px" />
-                                <p id="flamingoLeftText">
-                                    Dummy Text
-                            </p>
+                                <img src="../img/alligatorleft.png" width="100%" height="680px" />
+                                <p id="alligatorLeftText1">
+                                    Alligators are deadly with jaws of steel. They need them to catch every meal. What would they eat if they had one wish?
+                                </p>
+                                <p id="alligatorLeftText2">
+                                    Hmmm, I don't know, maybe some fish!
+                                </p>
                             </div>
                         </figure>
                         <figure className="front">
@@ -167,7 +174,7 @@ class FlipPage extends Component {
                                 <p id="monkeyRightText">
                                     But what in <br />the world <br />
                                     do Monkeys eat?
-                            </p>
+                                </p>
                             </div>
                         </figure>
                     </div>
@@ -176,19 +183,16 @@ class FlipPage extends Component {
                             <div className="container">
                                 <img src="../img/monkeyleft.png" width="100%" height="680px" />
                                 <p id="monkeyLeftText">
-                                    The Monkeys <br />
-                                    look hungry. <br />
-                                    Let's give <br />
-                                    them a treat.
-                            </p>
+                                    One monkey was swinging high up above, another one picking and eating some bugs. Mom said "They look hungry, let's give them a treat!"
+                                </p>
                             </div>
                         </figure>
                         <figure className="front">
                             <div className="container">
-                                <img src="../img/entranceright1.png" width="100%" height="680px" />
+                                <img src="../img/entranceright3.png" width="100%" height="680px" />
                                 <p id="entranceRightText">
                                     The Zoo is so big with so much to see, <br />
-                                    so they decided to start with the Monkeys.
+                                    they decided to start with the Monkeys.
                             </p>
                             </div>
                         </figure>
@@ -197,7 +201,7 @@ class FlipPage extends Component {
                     <div className="right">
                         <figure className="back">
                             <div className="container">
-                                <img src="../img/entranceleft1.png" width="100%" height="680px" />
+                                <img src="../img/entranceleft3.png" width="100%" height="680px" />
                                 <p id="entranceLeftText">
                                     Name's family was bored with nothing to do, <br />
                                     so they decided to go to the Zoo.
@@ -216,12 +220,12 @@ class FlipPage extends Component {
                         <figure className="back">
                             <div className="container">
                                 <Birds />
-                                <img src="../img/leftindex.png" width="100%" height="680px" />
+                                <img src="../img/leftindex2.png" width="100%" height="680px" />
                             </div>
                         </figure>
                         <figure className="front" id="cover">
                             <div className="container">
-                                <img src="../img/cover2.png" width="105%" height="680px" />
+                                <img src="../img/cover2.png" width="100%" height="680px" />
                                 <p id="coverText">
                                     A Day At The Zoo
                             </p>

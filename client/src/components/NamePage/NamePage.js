@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./NamePage.css";
+import axios from "axios";
 
 class NamePage extends React.Component {
     constructor(props) {
@@ -16,9 +17,19 @@ class NamePage extends React.Component {
 
     handleSubmit(event) {
         alert('A name was submitted: ' + this.state.value);
+        console.log(this.state.value);
         event.preventDefault();
-    }
 
+        //needs to receive it as an object
+        axios.post("/user/signup", 
+            { name: this.state.value }
+        );
+      
+    }
+        
+    
+
+        
     render() {
         return (
         <div className="container">
@@ -28,7 +39,7 @@ class NamePage extends React.Component {
             </div> */}
 
             <div className="container">
-                <img src="../img/rightindex.png" width="100%" height="680px" />
+                <img src="../img/rightindex2.png" width="100%" height="680px" />
                 <p id="indexText">
                     This Book Belongs To: <br />
                     <form onSubmit={this.handleSubmit}>
@@ -55,7 +66,7 @@ class NamePage extends React.Component {
             </div> */}
         </div>
         );
-    }
-}
+    };
 
+}
 export default NamePage
