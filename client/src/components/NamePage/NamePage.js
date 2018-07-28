@@ -21,14 +21,14 @@ class NamePage extends React.Component {
         event.preventDefault();
 
         //needs to receive it as an object
-        axios({
-            method: 'post',
-            url: "user/signup",
-            name: this.state.value
-        })
+        axios.post("/user/signup", 
+            { name: this.state.value }
+        );
+      
+    }
         
     
-    };
+
         
     render() {
         return (
@@ -66,7 +66,7 @@ class NamePage extends React.Component {
             </div> */}
         </div>
         );
-    }
-}
+    };
 
+}
 export default NamePage
