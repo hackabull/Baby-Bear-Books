@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./NamePage.css";
 import axios from "axios";
 
-class NamePage extends React.Component {
+class NamePage extends Component {
     constructor(props) {
         super(props);
         this.state = { value: '' };
@@ -42,14 +42,14 @@ class NamePage extends React.Component {
             </div> */}
 
             <div className="container">
-                <img src="../img/rightindex2.png" width="100%" height="680px" />
-                <p id="indexText">
+                <img src="../img/rightindex2.png" alt="right-index" width="100%" height="680px" />
+                    <p>
                     This Book Belongs To: <br />
-                    <form onSubmit={this.handleSubmit}>
-                        <input id="nametext" type="text" value={this.state.value} onChange={this.handleChange} />
+                        <form onSubmit={this.handleSubmit}>
+                            <input id="nametext" type="text" value={this.state.value} onChange={this.handleChange} />
                         <input id="submit" type="submit" value="Submit" />
-                    </form>
-                </p>
+                        </form>
+                    </p>
             </div>
 
             {/* <div className="bird-container bird-container--one">
