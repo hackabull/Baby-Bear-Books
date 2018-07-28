@@ -4,12 +4,12 @@ Type in your own name on the first pages of the book and follow along as you vis
 
 This site has the look and feel of a book: images that take up the entire page and pages that "flip" on the next page click. Readers drag and drop images to move the plot of the story forward. Each book is short enough to be read in ten minutes. We are envisioning a new genre of learning tools that both educate kids and give parents a chance to connect with their children on a shared screen for a capped amount of time. 
 
-# Planned Technologies
-React Drag and Drop
-Bootstrap
-[NPM Flip Page](https://www.npmjs.com/package/react-flip-page)
-Mongo DB
-Express
+# Technologies
+- React Drag and Drop
+- Bootstrap
+- [NPM Flip Page](https://www.npmjs.com/package/react-flip-page)
+- Mongo DB
+- Express
 
 # Future development
 - Add more books (or visit more animals at the zoo).
