@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./birds.css";
 import "./birds.scss";
 
-class Birds extends React.Component {
+class Birds extends Component {
     // constructor(props) {
     //     super(props);
     //     this.state = { value: '' };
