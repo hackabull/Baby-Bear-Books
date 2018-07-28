@@ -1,17 +1,27 @@
 import React, { Component } from 'react';
 import './App.css';
-import banana from "../image/cartoonyBananas.png"
-import burger from "../image/hamburger.png"
-import lolli from "../image/lollipop.png"
+import banana from "../image/banana.png"
+import hotdog from "../image/hotdog.png"
+import coffee from "../image/coffee.png"
+import fish from "../image/fish.png"
+import leaves from "../image/leaves.png"
+import shrimp from "../image/shrimp.png"
+import steak from "../image/steak.png"
+import watermelon from "../image/watermelon.png"
 
 
 export default class DragDrop extends Component {
     //lines 10-14 need to go in app.js & just called here
     state = {
         tasks: [
+            {name:"fish", category:"readyItem", bgimage: fish},
+            {name:"hotdog", category:"readyItem", bgimage: hotdog},
             {name:"banana",category:"readyItem", bgimage: banana},
-            {name:"burger", category:"readyItem", bgimage: burger},
-            {name:"lolli", category:"readyItem", bgimage: lolli}
+            {name:"leaves", category:"readyItem", bgimage: leaves},
+            {name:"shrimp", category:"readyItem", bgimage: shrimp},
+            {name:"coffee", category:"readyItem", bgimage: coffee},
+            {name:"steak", category:"readyItem", bgimage: steak},
+            {name:"watermelon", category:"readyItem", bgimage: watermelon}
           ]
     }
 
@@ -62,11 +72,11 @@ export default class DragDrop extends Component {
 
         return (
             <div className="container-drag">
-                <h2 className="header">Baby Bear Books</h2>
+                <h2 className="header">Baby Bear Books Presents:</h2>
                 <div className="readyItem"
                     onDragOver={(e)=>this.onDragOver(e)}
                     onDrop={(e)=>{this.onDrop(e, "readyItem")}}>
-                    <span className="task-header">Drag Me!</span>
+                    <span className="task-header" id="dragMe">Drag Me!</span>
                     {tasks.readyItem}
                 </div>
                 <div className="droppable" 
