@@ -43,7 +43,7 @@ class NamePage extends Component {
 
             <div className="container">
                 <img src="../img/rightindex2.png" alt="right-index" width="100%" height="680px" />
-                    <p>
+                    <p id="indexText">
                     This Book Belongs To: <br />
                         <form onSubmit={this.handleSubmit}>
                             <input id="nametext" type="text" value={this.state.value} onChange={this.handleChange} />
