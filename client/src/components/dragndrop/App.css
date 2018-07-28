@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Homemade+Apple');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
 
 .App {
   text-align: center;
@@ -28,10 +28,11 @@
   margin: 0;
   padding:0;
   width: 100%;
+  padding-top: 30px;
   /* background-color: #e0e0e0; */
   width: 100%;
-  font-family: 'Homemade Apple', cursive;
-  font-size: 3rem;
+  font-family: 'Dancing Script', cursive;
+  font-size: 3.5rem;
 }
 
 .task-header {
@@ -43,8 +44,10 @@ padding: 0;
 #dragMe {
   padding-top: 10px;
   padding-bottom: 20px;
-  border-bottom: 2px solid black;
+  border-bottom: 1px solid black;
   font-size: 1.5rem;
+  font-family: 'Dancing Script', cursive;
+  font-weight: bold;
 }
 
 .droppable {
@@ -119,5 +122,5 @@ padding: 0;
   background-image: url('../../components/image/watermelon.png');
   background-repeat: no-repeat;
   height: 10%;
-  width: 100%;
+  width: 80%;
 }
