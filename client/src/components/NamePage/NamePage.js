@@ -23,7 +23,10 @@ class NamePage extends React.Component {
         //needs to receive it as an object
         axios.post("/user/signup", 
             { name: this.state.value }
+        ).then(
+            () => this.props.signUpUser()
         );
+        
       
     }
         

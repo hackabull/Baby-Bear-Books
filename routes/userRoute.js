@@ -1,7 +1,7 @@
 const router = require("express").Router();
 const userService = require("../service/userService");
 
-// "user/signup" to create new user
+// "/user/signup" to create new user
 router.route("/signup")
   .get(userService.findAll)
   .post(userService.create);

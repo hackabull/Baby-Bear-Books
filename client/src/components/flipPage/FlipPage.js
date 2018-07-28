@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import './FlipPage.css';
 import NamePage from '../NamePage/NamePage.js'
 import Birds from '../birds/birds.js'
+import axios from "axios";
 
 
 
@@ -13,6 +14,13 @@ var z = 1;
 
 
 class FlipPage extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            nameOfUser: ""
+        }
+    }
+
     turnRight() {
         if (si >= 1) {
             si--;
@@ -47,8 +55,19 @@ class FlipPage extends Component {
         setTimeout(function () { right[si - 1].style.zIndex = "auto"; }, 350);
     }
 
+    signUpUser = () => {
+        axios.get("/user/signup")
+        .then( (response)=> {
+            console.log("I get here", this);
+            // this.setState({
+            //     nameOfUser: "response"
+            // })
+        })
+    };
+
     render() {
         return (
+    
             <div className="book-section">
                 <div className="container">
                     <div className="right">
@@ -202,15 +221,17 @@ class FlipPage extends Component {
                         <figure className="back">
                             <div className="container">
                                 <img src="../img/entranceleft3.png" width="100%" height="680px" />
+                        
                                 <p id="entranceLeftText">
-                                    Name's family was bored with nothing to do, <br />
+                                    {this.state.nameOfUser}'s family was bored with nothing to do, <br />
                                     so they decided to go to the Zoo.
                             </p>
                             </div>
                         </figure>
                         <figure className="front">
                             <div className="container">
-                                <NamePage />
+                                <NamePage signUpUser={this.signUpUser} />
+                                 
                                 <Birds />
                             </div>
                         </figure>
@@ -234,11 +255,15 @@ class FlipPage extends Component {
                     </div>
                 </div>
                 <div className="btncontainer">
-                    <button className="turnbtn" onClick={this.turnLeft}>Prev</button> <button className="turnbtn" onClick={this.turnRight}>Next</button>
+                    <button className="turnbtn" onClick={this.turnLeft}>Prev</button> <button className="turnbtn" onClick={this.turnRight}
+                    >Next</button>
+                </div>
+                <div className="user-name">
                 </div>
             </div>
         );
     }
 }
+
 
 export default FlipPage
