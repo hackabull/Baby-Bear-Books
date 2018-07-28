@@ -31,6 +31,7 @@ body{
 	transition: 0.7s ease-in-out;
 	transform-style: preserve-3d;
 }
+
 .book-section > .container > .right{
 	right:0;
 	transform-origin: left;

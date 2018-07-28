@@ -4,6 +4,8 @@ import NamePage from '../NamePage/NamePage.js'
 import Birds from '../birds/birds.js'
 
 
+
+
 var right = document.getElementsByClassName("right");
 var si = right.length;
 var z = 1;
@@ -99,6 +101,7 @@ class FlipPage extends Component {
                     <div className="right">
                         <figure className="back">
                             <div className="container">
+
                                 <img src="../img/lionleft.png" width="100%" height="680px" />
                                 <p id="lionLeftText">
                                     Dummy Text
