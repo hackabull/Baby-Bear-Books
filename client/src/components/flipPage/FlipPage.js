@@ -69,7 +69,7 @@ class FlipPage extends Component {
                                 </p>
                             </div>
                         </figure>
-                        <figure className="front">
+                        {/* <figure className="front">
                             <div className="container">
                                 <img src="../img/parrotright.png" width="100%" height="680px" />
                                 <p id="parrotRightText">
@@ -86,7 +86,7 @@ class FlipPage extends Component {
                                     Dummy Text
                                 </p>
                             </div>
-                        </figure>
+                        </figure> */}
                         <figure className="front">
                             <div className="container">
                                 <img src="../img/lionright.png" width="100%" height="680px" />
