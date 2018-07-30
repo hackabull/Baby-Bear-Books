@@ -223,7 +223,7 @@ class FlipPage extends Component {
                                 <img src="../img/entranceleft3.png" alt="entrance-left" width="100%" height="680px" />
                         
                                 <p id="entranceLeftText">
-                                    {this.state.nameOfUser}'s family was bored with nothing to do, <br />
+                                    {this.props.signUpUser}'s family was bored with nothing to do, <br />
                                     so they decided to go to the Zoo.
                             </p>
                             </div>
