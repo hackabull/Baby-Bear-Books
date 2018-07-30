@@ -1,9 +1,9 @@
 import React  from "react";
 import "./NamePage.css";
 
-// becomes dumb component
 const NamePage = (props) => {
  
+    // deconstructed the props oject here to make NamePage a dumb component
     const { handleSubmit, userName, handleNameChange } = props;
 
         return (

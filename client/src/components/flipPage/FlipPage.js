@@ -234,9 +234,10 @@ class FlipPage extends Component {
                         <figure className="back">
                             <div className="container">
                                 <img src="../img/entranceleft3.png" alt="entrance-left" width="100%" height="680px" />
-                        
+                                
                                 <p id="entranceLeftText">
-                                    {this.state.nameOfUser}'s family was bored with nothing to do, <br />
+                                    {/* can now use this across component */}
+                                   {this.state.nameOfUser}'s family was bored with nothing to do, <br />
                                     so they decided to go to the Zoo.
                             </p>
                             </div>
