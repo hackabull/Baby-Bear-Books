@@ -4,21 +4,33 @@ import NamePage from '../NamePage/NamePage.js'
 import Birds from '../birds/birds.js'
 import axios from "axios";
 
-
-
-
 var right = document.getElementsByClassName("right");
 var si = right.length;
 var z = 1;
 
-
-
 class FlipPage extends Component {
     constructor(props) {
         super(props);
-        this.state = {
+            this.state = {
             nameOfUser: ""
         }
+    }
+
+    handleNameChange = (event) => {
+        this.setState({ nameOfUser: event.target.value });
+    }
+
+    handleSubmit = (event) => {
+        event.preventDefault();
+        alert('A name was submitted: ' + this.state.nameOfUser);
+        //needs to receive it as an object
+        axios.post("/user/signup", 
+            { name: this.state.nameOfUser }
+        ).then(
+            () => this.signUpUser()
+        );
+        
+      
     }
 
     turnRight() {
@@ -57,11 +69,12 @@ class FlipPage extends Component {
 
     signUpUser = () => {
         axios.get("/user/signup")
+    
         .then( (response)=> {
-            console.log("I get here", this);
-            // this.setState({
-            //     nameOfUser: "response"
-            // })
+            // console.log("I get here");
+            // console.log("this", this);
+            // console.log("response", this.response)
+            
         })
     };
 
@@ -230,7 +243,7 @@ class FlipPage extends Component {
                         </figure>   
                         <figure className="front">
                             <div className="container">
-                                <NamePage signUpUser={this.signUpUser} />
+                                <NamePage userName={this.state.nameOfUser} handleNameChange={this.handleNameChange} handleSubmit={this.handleSubmit} />
                                  
                                 <Birds />
                             </div>
