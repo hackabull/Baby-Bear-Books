@@ -11,19 +11,23 @@ import shrimp from "./components/image/shrimp.png"
 import steak from "./components/image/steak.png"
 import watermelon from "./components/image/watermelon.png"
 
+const initialTasks = [
+    { name: "fish", category: "readyItem", bgimage: fish },
+    { name: "hotdog", category: "readyItem", bgimage: hotdog },
+    { name: "banana", category: "readyItem", bgimage: banana },
+    { name: "leaves", category: "readyItem", bgimage: leaves },
+    { name: "shrimp", category: "readyItem", bgimage: shrimp },
+    { name: "coffee", category: "readyItem", bgimage: coffee },
+    { name: "steak", category: "readyItem", bgimage: steak },
+    { name: "watermelon", category: "readyItem", bgimage: watermelon }
+]
+
 class App extends Component {
-    state = {
-        tasks: [
-            { name: "fish", category: "readyItem", bgimage: fish },
-            { name: "hotdog", category: "readyItem", bgimage: hotdog },
-            { name: "banana", category: "readyItem", bgimage: banana },
-            { name: "leaves", category: "readyItem", bgimage: leaves },
-            { name: "shrimp", category: "readyItem", bgimage: shrimp },
-            { name: "coffee", category: "readyItem", bgimage: coffee },
-            { name: "steak", category: "readyItem", bgimage: steak },
-            { name: "watermelon", category: "readyItem", bgimage: watermelon }
-        ]
-    }
+     state = {
+        tasks: initialTasks,
+
+    // this.handleClick = this.handleClick.bind(this)
+}
 
     onDragStart = (ev, id) => {
         console.log('dragstart:', id);
@@ -44,12 +48,28 @@ class App extends Component {
             return task;
         });
 
-        //needs to go in app.js and passed as props this.props.nameOfFunction() -- in app.js they will be state
+
         this.setState({
             ...this.state,
             tasks
         });
     }
+
+ handleClick = () => {
+    const tasks = this.state.tasks.map(t => {
+        t.category = "readyItem";
+        return t;
+    })
+    this.setState({tasks})
+    // let id = ev.dataTransfer.getData("id");
+    // let tasks = this.state.tasks.filter((task) => {
+    //   if (task.name === id) {
+    //     task.category = "dropped";
+    //   }
+    //     return task;
+    // });
+    // this.setState({})
+   };
 
     render() {
         var tasks = {
@@ -78,7 +98,7 @@ class App extends Component {
                     <span className="task-header" id="dragMe">Drag Me!</span>
                     {tasks.readyItem}
                 </div>
-                <FlipPage />
+                <FlipPage pageTurn={this.handleClick} />
                 <div className="droppable"
                     onDragOver={(e) => this.onDragOver(e)}
                     onDrop={(e) => this.onDrop(e, "dropped")}>

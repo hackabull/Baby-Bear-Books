@@ -9,9 +9,10 @@ var si = right.length;
 var z = 1;
 
 class FlipPage extends Component {
+    props;
     constructor(props) {
         super(props);
-            this.state = {
+        this.state = {
             nameOfUser: ""
         }
     }
@@ -33,7 +34,8 @@ class FlipPage extends Component {
       
     }
 
-    turnRight() {
+    turnRight = () => {
+        this.props.pageTurn();
         if (si >= 1) {
             si--;
         }
@@ -52,7 +54,8 @@ class FlipPage extends Component {
         z++;
         right[si].style.zIndex = z;
     }
-    turnLeft() {
+    turnLeft = () => {
+        this.props.pageTurn();
         if (si < right.length) {
             si++;
         }
@@ -269,7 +272,9 @@ class FlipPage extends Component {
                     </div>
                 </div>
                 <div className="btncontainer">
-                    <button className="turnbtn" onClick={this.turnLeft}>Prev</button> <button className="turnbtn" onClick={this.turnRight}
+                    <button className="turnbtn" 
+                        onClick={this.turnLeft} 
+                    >Prev</button> <button className="turnbtn" onClick={this.turnRight}
                     >Next</button>
                 </div>
                 <div className="user-name">
