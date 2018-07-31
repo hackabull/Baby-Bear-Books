@@ -70,22 +70,22 @@ export default class DragDrop extends Component {
             );
         });
 
-        return (
-            <div className="container-drag">
-                <h2 className="header">Baby Bear Books Presents:</h2>
-                <div className="readyItem"
-                    onDragOver={(e)=>this.onDragOver(e)}
-                    onDrop={(e)=>{this.onDrop(e, "readyItem")}}>
-                    <span className="task-header" id="dragMe">Drag Me!</span>
-                    {tasks.readyItem}
-                </div>
-                <div className="droppable" 
-                    onDragOver={(e)=>this.onDragOver(e)}
-                    onDrop={(e)=>this.onDrop(e, "dropped")}>
-                    <span className="task-header"></span>
-                    {tasks.dropped}
-                </div>
-            </div>
-        );
+        // return (
+        //     <div className="container-drag">
+        //         <h2 className="header">Baby Bear Books Presents:</h2>
+        //         <div className="readyItem"
+        //             onDragOver={(e)=>this.onDragOver(e)}
+        //             onDrop={(e)=>{this.onDrop(e, "readyItem")}}>
+        //             <span className="task-header" id="dragMe">Drag Me!</span>
+        //             {tasks.readyItem}
+        //         </div>
+        //         <div className="droppable" 
+        //             onDragOver={(e)=>this.onDragOver(e)}
+        //             onDrop={(e)=>this.onDrop(e, "dropped")}>
+        //             <span className="task-header"></span>
+        //             {tasks.dropped}
+        //         </div>
+        //     </div>
+        // );
     }
 }

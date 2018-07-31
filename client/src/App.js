@@ -71,7 +71,7 @@ class App extends Component {
 
         return (
             <div className="container-drag">
-                <h2 className="header">Baby Bear Books</h2>
+                <h2 className="header">Baby Bear Books Presents:</h2>
                 <div className="readyItem"
                     onDragOver={(e) => this.onDragOver(e)}
                     onDrop={(e) => { this.onDrop(e, "readyItem") }}>
