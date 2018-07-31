@@ -324,7 +324,7 @@ body{
 	position: absolute;
 	text-align: center;
 	bottom: 0;
-	right: 220px;
+	/* right: 220px; */
 	font-family: 'Fredericka the Great', cursive;
 	font-size: 1.5rem;
 	font-weight: bold;
@@ -341,7 +341,7 @@ body{
 	position: absolute;
 	text-align: center;
 	top: 0;
-	right: 220px;
+	/* right: 220px; */
 	font-family: 'Fredericka the Great', cursive;
 	font-size: 1.5rem;
 	font-weight: bold;
@@ -358,7 +358,7 @@ body{
 	position: absolute;
 	text-align: center;
 	bottom: 0;
-	right: 220px;
+	/* right: 220px; */
 	font-family: 'Fredericka the Great', cursive;
 	font-size: 1.5rem;
 	font-weight: bold;
@@ -375,41 +375,7 @@ body{
 	position: absolute;
 	text-align: center;
 	top: 0;
-	right: 220px;
-	font-family: 'Fredericka the Great', cursive;
-	font-size: 1.5rem;
-	font-weight: bold;
-	padding: 20px;
-	background: 
-    radial-gradient(
-        rgba(255, 255, 255, 1),
-        rgba(255, 255, 255, 0.75),
-        rgba(255, 255, 255, 0)
-    );
-}
-
-#parrotRightText {
-	position: absolute;
-	text-align: center;
-	top: 0;
-	right: 220px;
-	font-family: 'Fredericka the Great', cursive;
-	font-size: 1.5rem;
-	font-weight: bold;
-	padding: 20px;
-	background: 
-    radial-gradient(
-        rgba(255, 255, 255, 1),
-        rgba(255, 255, 255, 0.75),
-        rgba(255, 255, 255, 0)
-    );
-}
-
-#parrotLeftText {
-	position: absolute;
-	text-align: center;
-	top: 0;
-	right: 220px;
+	/* right: 220px; */
 	font-family: 'Fredericka the Great', cursive;
 	font-size: 1.5rem;
 	font-weight: bold;
@@ -425,8 +391,8 @@ body{
 #endpageRightText {
 	position: absolute;
 	text-align: center;
-	top: 0;
-	right: 220px;
+	bottom: 0;
+	/* right: 220px; */
 	font-family: 'Fredericka the Great', cursive;
 	font-size: 1.5rem;
 	font-weight: bold;
@@ -443,7 +409,7 @@ body{
 	position: absolute;
 	text-align: center;
 	top: 0;
-	right: 220px;
+	/* right: 220px; */
 	font-family: 'Fredericka the Great', cursive;
 	font-size: 1.5rem;
 	font-weight: bold;
@@ -454,4 +420,21 @@ body{
         rgba(255, 255, 255, 0.75),
         rgba(255, 255, 255, 0)
     );
+}
+
+#theEndText {
+	position: absolute;
+	text-align: center;
+	bottom: 0;
+	/* right: 220px; */
+	font-family: 'Fredericka the Great', cursive;
+	font-size: 1.5rem;
+	font-weight: bold;
+	padding: 20px;
+	/* background: 
+    radial-gradient(
+        rgba(255, 255, 255, 1),
+        rgba(255, 255, 255, 0.75),
+        rgba(255, 255, 255, 0)
+    ); */
 }
