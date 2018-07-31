@@ -63,8 +63,8 @@ padding: 0;
 }
 
 .draggable {
-  width: 150px;
-  height: 150px;
+  width: 80px;
+  height: 80px;
   margin: 5px auto;
   line-height: 5em;
 }
@@ -72,55 +72,48 @@ padding: 0;
 #banana {
   background-image: url('../../components/image/banana.png');
   background-repeat: no-repeat;
-  height: 10%;
   width: 50%;
 }
 
 #hotdog {
   background-image:url('../../components/image/hotdog.png');
   background-repeat: no-repeat;
-  height: 10%;
   width: 50%;
 }
 
 #coffee {
   background-image: url('../../components/image/coffee.png');
   background-repeat: no-repeat;
-  height: 10%;
+
   width: 50%;
 }
 
 #fish {
   background-image: url('../../components/image/fish.png');
   background-repeat: no-repeat;
-  height: 10%;
   width: 80%;
 }
 
 #leaves {
   background-image: url('../../components/image/leaves.png');
   background-repeat: no-repeat;
-  height: 13%;
   width: 80%;
 }
 
 #shrimp {
   background-image: url('../../components/image/shrimp.png');
   background-repeat: no-repeat;
-  height: 10%;
   width: 70%;
 }
 
 #steak {
   background-image: url('../../components/image/steak.png');
   background-repeat: no-repeat;
-  height: 10%;
   width: 60%;
 }
 
 #watermelon {
   background-image: url('../../components/image/watermelon.png');
   background-repeat: no-repeat;
-  height: 10%;
   width: 80%;
 }

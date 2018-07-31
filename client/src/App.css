@@ -75,19 +75,3 @@ padding: 0;
   margin: 5px auto;
   line-height: 5em;
 }
-
-#banana {
-  background-image: url('./components/image/cartoonyBananas.png');
-  background-repeat: no-repeat;
-}
-
-#burger {
-  background-image:url('./components/image/hamburger.png');
-  background-repeat: no-repeat;
-}
-
-#lolli {
-  background-image: url('./components/image/lollipop.png');
-  background-repeat: no-repeat;
-}
-
