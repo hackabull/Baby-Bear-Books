@@ -1,39 +1,11 @@
-import React, { Component } from "react";
+import React  from "react";
 import "./NamePage.css";
-import axios from "axios";
 
-class NamePage extends Component {
-    constructor(props) {
-        super(props);
-        this.state = { value: '' };
+const NamePage = (props) => {
+ 
+    // deconstructed the props oject here to make NamePage a dumb component
+    const { handleSubmit, userName, handleNameChange } = props;
 
-        this.handleChange = this.handleChange.bind(this);
-        this.handleSubmit = this.handleSubmit.bind(this);
-    }
-
-    handleChange(event) {
-        this.setState({ value: event.target.value });
-    }
-
-    handleSubmit(event) {
-        alert('A name was submitted: ' + this.state.value);
-        console.log(this.state.value);
-        event.preventDefault();
-
-        //needs to receive it as an object
-        axios.post("/user/signup", 
-            { name: this.state.value }
-        ).then(
-            () => this.props.signUpUser()
-        );
-        
-      
-    }
-        
-    
-
-        
-    render() {
         return (
         <div className="container">
 
@@ -43,13 +15,13 @@ class NamePage extends Component {
 
             <div className="container">
                 <img src="../img/rightindex2.png" alt="right-index" width="100%" height="680px" />
-                    <p id="indexText">
+                    <div id="indexText">
                     This Book Belongs To: <br />
-                        <form onSubmit={this.handleSubmit}>
-                            <input id="nametext" type="text" value={this.state.value} onChange={this.handleChange} />
+                        <form onSubmit={handleSubmit}>
+                            <input id="nametext" type="text" value={userName} onChange={handleNameChange} />
                         <input id="submit" type="submit" value="Submit" />
                         </form>
-                    </p>
+                    </div>
             </div>
 
             {/* <div className="bird-container bird-container--one">
@@ -69,7 +41,6 @@ class NamePage extends Component {
             </div> */}
         </div>
         );
-    };
-
-}
-export default NamePage
+  
+};
+export default NamePage;
