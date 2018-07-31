@@ -11,7 +11,7 @@ var z = 1;
 class FlipPage extends Component {
     constructor(props) {
         super(props);
-            this.state = {
+        this.state = {
             nameOfUser: ""
         }
     }
@@ -24,13 +24,13 @@ class FlipPage extends Component {
         event.preventDefault();
         alert('A name was submitted: ' + this.state.nameOfUser);
         //needs to receive it as an object
-        axios.post("/user/signup", 
+        axios.post("/user/signup",
             { name: this.state.nameOfUser }
         ).then(
             () => this.signUpUser()
         );
-        
-      
+
+
     }
 
     turnRight() {
@@ -69,18 +69,18 @@ class FlipPage extends Component {
 
     signUpUser = () => {
         axios.get("/user/signup")
-    
-        .then( (response)=> {
-            // console.log("I get here");
-            // console.log("this", this);
-            // console.log("response", this.response)
-            
-        })
+
+            .then((response) => {
+                // console.log("I get here");
+                // console.log("this", this);
+                // console.log("response", this.response)
+
+            })
     };
 
     render() {
         return (
-    
+
             <div className="book-section">
                 <div className="container">
                     <div className="right">
@@ -96,7 +96,7 @@ class FlipPage extends Component {
                             <div className="container">
                                 <img src="../img/endpageright.png" width="100%" height="680px" alt="end-page-right" />
                                 <p id="endpageRightText">
-                                    Our tummy's are grumbling, let's get something to eat! {this.props.signUpUser}, what would YOU like as a treat?
+                                    Our tummy's are grumbling, let's get something to eat! {this.state.nameOfUser}, what would YOU like as a treat?
                                 </p>
                             </div>
                         </figure>
@@ -110,29 +110,11 @@ class FlipPage extends Component {
                                 </p>
                             </div>
                         </figure>
-                        {/* <figure className="front">
-                            <div className="container">
-                                <img src="../img/parrotright.png" width="100%" height="680px" />
-                                <p id="parrotRightText">
-                                    Dummy Text
-                                </p>
-                            </div>
-                        </figure>
-                    </div>
-                    <div className="right">
-                        <figure className="back">
-                            <div className="container">
-                                <img src="../img/parrotleft.png" width="100%" height="680px" />
-                                <p id="parrotLeftText">
-                                    Dummy Text
-                                </p>
-                            </div>
-                        </figure> */}
                         <figure className="front">
                             <div className="container">
                                 <img src="../img/lionright.png" alt="lion-right" width="100%" height="680px" />
                                 <p id="lionRightText">
-                                    {this.props.signUpUser}, can you guess what they'd like for a treat?
+                                    {this.state.nameOfUser}, can you guess what they'd like for a treat?
                                 </p>
                             </div>
                         </figure>
@@ -151,7 +133,7 @@ class FlipPage extends Component {
                             <div className="container">
                                 <img src="../img/girafferight.png" alt="giraffe-right" width="100%" height="680px" />
                                 <p id="giraffeRightText">
-                                    {this.props.signUpUser}, let's give them some leaves as a treat!
+                                    {this.state.nameOfUser}, let's give them some leaves as a treat!
                                 </p>
                             </div>
                         </figure>
@@ -169,7 +151,7 @@ class FlipPage extends Component {
                             <div className="container">
                                 <img src="../img/elephantright2.png" alt="elephant-right" width="100%" height="680px" />
                                 <p id="elephantRightText">
-                                    {this.props.signUpUser}, what fruit should we give these Elephants to eat?
+                                    {this.state.nameOfUser}, what fruit should we give these Elephants to eat?
                                 </p>
                             </div>
                         </figure>
@@ -190,7 +172,7 @@ class FlipPage extends Component {
                                     Flamingos stand tall with vibrant pink feathers, a color they get from this ocean dweller. For flamingos they are a delicious treat.
                                 </p>
                                 <p id="flamingoRightText2">
-                                    {this.props.signUpUser}, can you guess what kind of sea creature they eat?
+                                    {this.state.nameOfUser}, can you guess what kind of sea creature they eat?
                                 </p>
                             </div>
                         </figure>
@@ -203,7 +185,7 @@ class FlipPage extends Component {
                                     Alligators are deadly with jaws of steel. They need them to catch every meal. What would they eat if they had one wish?
                                 </p>
                                 <p id="alligatorLeftText2">
-                                    "Hmmm, I don't know", {this.props.signUpUser} said, "maybe some fish?"
+                                    "Hmmm, I don't know", {this.state.nameOfUser} said, "maybe some fish?"
                                 </p>
                             </div>
                         </figure>
@@ -222,7 +204,7 @@ class FlipPage extends Component {
                             <div className="container">
                                 <img src="../img/monkeyleft.png" alt="monkey-left" width="100%" height="680px" />
                                 <p id="monkeyLeftText">
-                                    One monkey was swinging high up above, another one picking and eating some bugs. {this.props.signUpUser} said "They look hungry, let's give them a treat!"
+                                    One monkey was swinging high up above, another one picking and eating some bugs. {this.state.nameOfUser} said "They look hungry, let's give them a treat!"
                                 </p>
                             </div>
                         </figure>
@@ -241,20 +223,20 @@ class FlipPage extends Component {
                         <figure className="back">
                             <div className="container">
                                 <img src="../img/entranceleft3.png" alt="entrance-left" width="100%" height="680px" />
-                                
+
                                 <p id="entranceLeftText">
 
                                     {/* can now use this across component */}
-                                   {this.state.nameOfUser}'s family was bored with nothing to do, <br />
+                                    {this.state.nameOfUser}'s family was bored with nothing to do, <br />
 
                                     so they decided to go to the Zoo.
                                 </p>
                             </div>
-                        </figure>   
+                        </figure>
                         <figure className="front">
                             <div className="container">
                                 <NamePage userName={this.state.nameOfUser} handleNameChange={this.handleNameChange} handleSubmit={this.handleSubmit} />
-                                 
+
                                 <Birds />
                             </div>
                         </figure>
