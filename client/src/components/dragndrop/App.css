@@ -6,11 +6,12 @@
   margin: 15px auto;
 }
 
-
+/* side bar container */
 .container-drag {
   text-align: center;
 }
 
+/* items in side bar*/
 .readyItem {
   position: center;
   width: 150px;
@@ -35,33 +36,20 @@
   font-size: 3.5rem;
 }
 
-.task-header {
-display: inline-block;
-width: 100%;
-padding: 0;
-}
-
-/* #dragMe {
-  padding-top: 10px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid black;
-  font-size: 1.5rem;
-  font-family: 'Dancing Script', cursive;
-  font-weight: bold;
-} */
-
+/* container for dropping items */
 .droppable {
   position: absolute;
   top: 300px;
-  left:850px;
-  width: 650px;
-  height: 350px;
+  left:500px;
+  width: 900px;
+  height: 500px;
   z-index: 999;
   right: 0;
   top: 10;
   padding: 10px;
 }
 
+/* items in sidebar */
 .draggable {
   width: 80px;
   height: 80px;
@@ -69,6 +57,7 @@ padding: 0;
   line-height: 5em;
 }
 
+/* side bar images */
 #banana {
   background-image: url('../../components/image/banana.png');
   background-repeat: no-repeat;

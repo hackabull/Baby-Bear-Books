@@ -5,9 +5,12 @@ body{
 	/* background-color: #eee8ff; */
 	background-color: #dcf8fa;
 }
+
 *{
 	box-sizing: border-box;
 }
+
+/* main book */
 .book-section{
 	height: 100vh;
 	width: 100%;
@@ -17,6 +20,8 @@ body{
 	left: 50%;
 	top: 10%;
 }
+
+/* pages */
 .book-section > .container{
 	height: 400px;
 	width: 1250px;
@@ -25,6 +30,7 @@ body{
 	margin-bottom: 30px;
 	perspective: 1200px;
 }
+
 .container > .right{
 	position: absolute;
 	height: 100%;
@@ -38,6 +44,7 @@ body{
 	transform-origin: left;
 	border-radius: 10px 0 0 10px;
 }
+
 .right > figure.front, .right > figure.back{
 	margin: 0;
 	height: 100%;
@@ -51,20 +58,24 @@ body{
 	background-color: white;
 	overflow: hidden;
 }
+
 .right > figure.front{
 	background-position: right;
 	border-radius: 0 10px 10px 0;
 	box-shadow: 2px 2px 15px -2px rgba(0,0,0,0.2);
 }
+
 .right > figure.back{
 	background-position: left;
 	border-radius: 10px 0 0 10px;
 	box-shadow: -2px 2px 15px -2px rgba(0,0,0,0.2);
 	transform: rotateY(180deg);
 }
+
 .flip{
 	transform: rotateY(-180deg);
 }
+
 .flip::before{
 	content: "";
 	position: absolute;
@@ -76,6 +87,8 @@ body{
 	border-radius: 0 10px 10px 0;
 	background-color: rgba(0,0,0,0.1);
 }
+
+/* prev & next buttons */
 .turnbtn{
 	/* border: 2px solid #c273f7; */
 	border: 2px solid #04e0f0;
@@ -99,22 +112,27 @@ body{
 	background-color: #04e0f0;
 	color: white;
 }
+
 .book-section > button:focus, .book-section > button:active{
 	outline: none;
 }
+
 .book-section > p{
 	color: rgba(0,0,0,0.7);
 	font-family: calibri;
 	font-size: 24px;
 }
+
 .book-section > p > a{
 	text-decoration: none;
 	color: #02cbda;
 }
+
 .book-section > button:hover{
 	background-color: #02cbda;
 	color: #fff;
 }
+
 .front#cover, .back#back-cover{
 	background-color: #02cbda;
 	font-family: calibri;
@@ -130,7 +148,6 @@ body{
  	position: relative;
  	right: 45%;
  	text-align: center;
-
 }
 
 #coverText {

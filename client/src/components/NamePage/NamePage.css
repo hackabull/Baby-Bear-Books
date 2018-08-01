@@ -1,28 +1,13 @@
-/* *,
-*::before,
-*::after {
-  box-sizing: border-box;
-} */
-/* 
-h1 {
-    font-family: 'Cabin Sketch', cursive;
-    text-align: center;
-    font-size: 3rem;
-} */
-
 .container {
-  /* z-index: 1; */
   position: absolute;
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 42rem;
- /* background-image: linear-gradient(to bottom, rgba(255, 168, 76, 0.6) 0%, rgba(255, 123, 13, 0.6) 100%), url("images/cartoon-2640555_1280.jpg"); */
   background-blend-mode: soft-light;
   background-size: cover;
   background-position: center center;
-  /* padding: 2rem; */
 }
 
 #indexText {
