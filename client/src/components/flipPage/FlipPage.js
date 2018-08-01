@@ -77,7 +77,6 @@ class FlipPage extends Component {
                 // console.log("I get here");
                 // console.log("this", this);
                 // console.log("response", this.response)
-
             })
     };
 
@@ -196,8 +195,7 @@ class FlipPage extends Component {
                             <div className="container">
                                 <img src="../img/monkeyright.png" alt="monkey-right" width="100%" height="680px" />
                                 <p id="monkeyRightText">
-                                    But what in <br />the world <br />
-                                    do Monkeys eat?
+                                    But what in the world do Monkeys eat?
                                 </p>
                             </div>
                         </figure>
@@ -225,7 +223,7 @@ class FlipPage extends Component {
                     <div className="right">
                         <figure className="back">
                             <div className="container">
-                                <img src="../img/entranceleft3.png" alt="entrance-left" width="100%" height="680px" />
+                                <img src="../img/entranceleft3.png" alt="entrance-left" width="100%" height="680px" z-index="1000"/>
 
                                 <p id="entranceLeftText">
 

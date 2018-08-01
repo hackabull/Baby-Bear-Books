@@ -25,8 +25,6 @@ const initialTasks = [
 class App extends Component {
      state = {
         tasks: initialTasks,
-
-    // this.handleClick = this.handleClick.bind(this)
 }
 
     onDragStart = (ev, id) => {
@@ -95,7 +93,7 @@ class App extends Component {
                 <div className="readyItem"
                     onDragOver={(e) => this.onDragOver(e)}
                     onDrop={(e) => { this.onDrop(e, "readyItem") }}>
-                    <span className="task-header" id="dragMe">Drag Me!</span>
+                    {/* <span className="task-header" id="dragMe">Drag Me!</span> */}
                     {tasks.readyItem}
                 </div>
                 <FlipPage pageTurn={this.handleClick} />

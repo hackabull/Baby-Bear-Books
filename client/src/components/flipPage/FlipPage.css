@@ -2,7 +2,8 @@
 
 body{
 	margin:0;
-	background-color: #ffecc6;
+	/* background-color: #eee8ff; */
+	background-color: #dcf8fa;
 }
 *{
 	box-sizing: border-box;
@@ -44,7 +45,7 @@ body{
 	position: absolute;
 	left:0;
 	top:0;
-
+	z-index: 1000;
 	background-repeat: no-repeat;
 	backface-visibility: hidden;
 	background-color: white;
@@ -76,17 +77,27 @@ body{
 	background-color: rgba(0,0,0,0.1);
 }
 .turnbtn{
-	border: 2px solid #ef9f00;
-
+	/* border: 2px solid #c273f7; */
+	border: 2px solid #04e0f0;
 	background-color: transparent;
-	color: #ef9f00;
+	color: #02cbda;
 	padding: 10px 20px;
 	border-radius: 5px;
 	cursor: pointer;
 	margin: 10px;
-	transition: 0.3s ease-in-out;
+	transition: 0.1s ease-in-out;
 	position: relative; 
 	right: 5%;
+	font-family: 'Fredericka the Great', cursive;
+	font-size: 15px;
+	margin-bottom: 30px;
+	margin-top: -10px;
+}
+
+.turnbtn:hover {
+	border: 2px solid white;
+	background-color: #04e0f0;
+	color: white;
 }
 .book-section > button:focus, .book-section > button:active{
 	outline: none;
@@ -98,25 +109,17 @@ body{
 }
 .book-section > p > a{
 	text-decoration: none;
-	color: #ef9f00;
+	color: #02cbda;
 }
 .book-section > button:hover{
-	background-color: #ef9f00;
+	background-color: #02cbda;
 	color: #fff;
 }
 .front#cover, .back#back-cover{
-	background-color: #ffcb63;
+	background-color: #02cbda;
 	font-family: calibri;
 	text-align: center;
-	/* padding: 0 30px; */
 }
-/* .front#cover h1{
-	color: #fff;
-} */
-/* .front#cover p{
-	color: rgba(0,0,0,0.8);
-	font-size: 14px;
-} */
 
 .gif1 {
 	height: 400px;
@@ -143,7 +146,7 @@ body{
 #indexText {
 	position: absolute;
 	text-align: center;
-	top: 10px;
+	top: 50px;
 	font-family: 'Cabin Sketch', cursive;
 	font-family: 'Fredericka the Great', cursive;
 	font-size: 1.5rem;
@@ -154,8 +157,7 @@ body{
 #entranceLeftText {
 	position: absolute;
 	text-align: center;
-	bottom: 30px;
-	/* left: 30px; */
+	top: 30px;
 	font-family: 'Fredericka the Great', cursive;
 	font-size: 1.5rem;
 	font-weight: bold;
@@ -171,7 +173,7 @@ body{
 #entranceRightText {
 	position: absolute;
 	text-align: center;
-	top: 20px;
+	bottom: 20px;
 	font-family: 'Fredericka the Great', cursive;
 	font-size: 1.5rem;
 	font-weight: bold;
@@ -189,6 +191,7 @@ body{
 	text-align: center;
 	top: 150px;
 	left: 10px;
+	margin: 30px;
 	font-family: 'Fredericka the Great', cursive;
 	font-size: 1.5rem;
 	font-weight: bold;
@@ -205,7 +208,7 @@ body{
 	position: absolute;
 	text-align: center;
 	bottom: 0;
-	right: 220px;
+	margin: 30px;
 	font-family: 'Fredericka the Great', cursive;
 	font-size: 1.5rem;
 	font-weight: bold;
@@ -222,7 +225,7 @@ body{
 	position: absolute;
 	text-align: center;
 	top: 0;
-	/* right: 220px; */
+	margin: 30px;
 	font-family: 'Fredericka the Great', cursive;
 	font-size: 1.5rem;
 	font-weight: bold;
@@ -239,7 +242,7 @@ body{
 	position: absolute;
 	text-align: center;
 	bottom: 0;
-	/* right: 220px; */
+	margin: 30px;
 	font-family: 'Fredericka the Great', cursive;
 	font-size: 1.5rem;
 	font-weight: bold;
@@ -256,7 +259,7 @@ body{
 	position: absolute;
 	text-align: center;
 	top: 0;
-	/* right: 220px; */
+	margin: 30px;
 	font-family: 'Fredericka the Great', cursive;
 	font-size: 1.5rem;
 	font-weight: bold;
@@ -273,7 +276,7 @@ body{
 	position: absolute;
 	text-align: center;
 	bottom: 0;
-	/* right: 220px; */
+	margin: 30px;
 	font-family: 'Fredericka the Great', cursive;
 	font-size: 1.5rem;
 	font-weight: bold;
@@ -290,7 +293,7 @@ body{
 	position: absolute;
 	text-align: center;
 	bottom: 0;
-	/* right: 220px; */
+	margin: 30px;
 	font-family: 'Fredericka the Great', cursive;
 	font-size: 1.5rem;
 	font-weight: bold;
@@ -307,7 +310,7 @@ body{
 	position: absolute;
 	text-align: center;
 	top: 0;
-	/* right: 220px; */
+	margin: 30px;
 	font-family: 'Fredericka the Great', cursive;
 	font-size: 1.5rem;
 	font-weight: bold;
@@ -324,7 +327,7 @@ body{
 	position: absolute;
 	text-align: center;
 	bottom: 0;
-	/* right: 220px; */
+	margin: 30px;
 	font-family: 'Fredericka the Great', cursive;
 	font-size: 1.5rem;
 	font-weight: bold;
@@ -341,7 +344,7 @@ body{
 	position: absolute;
 	text-align: center;
 	top: 0;
-	/* right: 220px; */
+	margin: 30px;
 	font-family: 'Fredericka the Great', cursive;
 	font-size: 1.5rem;
 	font-weight: bold;
@@ -358,7 +361,7 @@ body{
 	position: absolute;
 	text-align: center;
 	bottom: 0;
-	/* right: 220px; */
+	margin: 30px;
 	font-family: 'Fredericka the Great', cursive;
 	font-size: 1.5rem;
 	font-weight: bold;
@@ -374,8 +377,8 @@ body{
 #lionLeftText {
 	position: absolute;
 	text-align: center;
-	top: 0;
-	/* right: 220px; */
+	bottom: 0;
+	margin: 30px;
 	font-family: 'Fredericka the Great', cursive;
 	font-size: 1.5rem;
 	font-weight: bold;
@@ -392,7 +395,7 @@ body{
 	position: absolute;
 	text-align: center;
 	bottom: 0;
-	/* right: 220px; */
+	margin: 30px;
 	font-family: 'Fredericka the Great', cursive;
 	font-size: 1.5rem;
 	font-weight: bold;
@@ -409,7 +412,7 @@ body{
 	position: absolute;
 	text-align: center;
 	top: 0;
-	/* right: 220px; */
+	margin: 30px;
 	font-family: 'Fredericka the Great', cursive;
 	font-size: 1.5rem;
 	font-weight: bold;
@@ -426,15 +429,8 @@ body{
 	position: absolute;
 	text-align: center;
 	bottom: 0;
-	/* right: 220px; */
 	font-family: 'Fredericka the Great', cursive;
 	font-size: 1.5rem;
 	font-weight: bold;
 	padding: 20px;
-	/* background: 
-    radial-gradient(
-        rgba(255, 255, 255, 1),
-        rgba(255, 255, 255, 0.75),
-        rgba(255, 255, 255, 0)
-    ); */
 }
