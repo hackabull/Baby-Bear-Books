@@ -8,11 +8,6 @@ const NamePage = (props) => {
 
         return (
         <div className="container">
-
-            {/* <div className="input-field col s6">
-                <input value="" id="first_name2" type="text" className="validate" />
-            </div> */}
-
             <div className="container">
                 <img src="../img/rightindex2.png" alt="right-index" width="100%" height="680px" />
                     <div id="indexText">
@@ -23,22 +18,6 @@ const NamePage = (props) => {
                         </form>
                     </div>
             </div>
-
-            {/* <div className="bird-container bird-container--one">
-                <div className="bird bird--one"></div>
-            </div>
-
-            <div className="bird-container bird-container--two">
-                <div className="bird bird--two"></div>
-            </div>
-
-            <div className="bird-container bird-container--three">
-                <div className="bird bird--three"></div>
-            </div>
-
-            <div className="bird-container bird-container--four">
-                <div className="bird bird--four"></div>
-            </div> */}
         </div>
         );
   

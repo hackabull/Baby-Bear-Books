@@ -14,13 +14,16 @@
 .readyItem {
   position: center;
   width: 150px;
-  height: 100vh;
+  /* height: 100vh; */
   left: 0;
-  top: 10px;
+  margin-top: 10px;
   padding: 10px;
   margin-left: 30px;
-  background-color: rgb(207, 207, 207);
-  border-right: 1px dotted;
+  /* background-color: rgb(226, 202, 248); */
+}
+
+.readyItem:hover {
+  cursor: pointer;
 }
 
 .header {
@@ -75,10 +78,20 @@ padding: 0;
   width: 50%;
 }
 
+#banana:hover, #banana:focus, #banana:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
 #hotdog {
   background-image:url('../../components/image/hotdog.png');
   background-repeat: no-repeat;
   width: 50%;
+}
+
+#hotdog:hover, #hotdog:focus, #hotdog:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 #coffee {
@@ -88,10 +101,20 @@ padding: 0;
   width: 50%;
 }
 
+#coffee:hover, #coffee:focus, #coffee:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
 #fish {
   background-image: url('../../components/image/fish.png');
   background-repeat: no-repeat;
   width: 80%;
+}
+
+#fish:hover, #fish:focus, #fish:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 #leaves {
@@ -100,10 +123,20 @@ padding: 0;
   width: 80%;
 }
 
+#leaves:hover, #leaves:focus, #leaves:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
 #shrimp {
   background-image: url('../../components/image/shrimp.png');
   background-repeat: no-repeat;
   width: 70%;
+}
+
+#shrimp:hover, #shrimp:focus, #shrimp:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 #steak {
@@ -112,8 +145,18 @@ padding: 0;
   width: 60%;
 }
 
+#steak:hover, #steak:focus, #steak:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
 #watermelon {
   background-image: url('../../components/image/watermelon.png');
   background-repeat: no-repeat;
   width: 80%;
+}
+
+#watermelon:hover, #watermelon:focus, #watermelon:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
