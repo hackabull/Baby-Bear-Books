@@ -223,7 +223,7 @@ class FlipPage extends Component {
                     <div className="right">
                         <figure className="back">
                             <div className="container">
-                                <img src="../img/entranceleft3.png" alt="entrance-left" width="100%" height="680px" />
+                                <img src="../img/entranceleft3.png" alt="entrance-left" width="100%" height="680px" z-index="1000"/>
 
                                 <p id="entranceLeftText">
 
