@@ -254,6 +254,14 @@ class FlipPage extends Component {
                   </div>
                 </figure>
               </div>
+                  <div className="instructions">
+                    <p id="instructionHeader">
+                      Book Instructions
+                    </p>
+                    <p id="instructionText">
+                      This is an interactive story for children.<br /> On the following page, enter your name before continuing on. <br />As you read through the story, <br />drag and drop the food items on the left <br /> onto the pages of the book!
+                    </p>
+                  </div>
             </div>
             {/* buttons for turning the page left and right */}
             <div className="btncontainer">
