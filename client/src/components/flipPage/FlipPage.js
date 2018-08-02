@@ -77,9 +77,7 @@ class FlipPage extends Component {
     signUpUser = () => {
       axios.get("/user/signup")
         .then((response) => {
-          // console.log("I get here");
-          // console.log("this", this);
-          // console.log("response", this.response)
+         
       })
     };
 
