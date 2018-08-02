@@ -39,10 +39,10 @@
 /* container for dropping items */
 .droppable {
   position: absolute;
-  top: 300px;
+  top: 350px;
   left:500px;
   width: 900px;
-  height: 500px;
+  height: 450px;
   z-index: 999;
   right: 0;
   top: 10;
